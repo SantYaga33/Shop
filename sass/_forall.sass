@@ -1,0 +1,117 @@
+*
+	box-sizing: border-box 
+
+body
+	// +op-reg 
+	color: $text-color
+
+a 
+	cursor: pointer
+	
+img 
+	max-width: 100%
+	display: block
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	padding: 0
+
+.container 
+	max-width: 1140px
+	margin: 0 auto
+
+.button 
+	padding: 12px 24px
+	border: 1px solid $main-color
+	background-color: #ffffff
+	font-size: 11px
+	color: $main-color
+	border-radius: 18px
+	// +op-reg
+
+.section 
+	padding: 54px
+
+.section__title 
+	// +op-semi
+	font-size: 26px
+	line-height: 21px
+	text-align: center
+	&:after 
+		content: ''
+		display: block
+		margin: 0 auto
+		width: 66px
+		height: 1px
+		margin-top: 20px
+		background-color: #dddddd
+
+.card 
+	width: 263px
+	padding: 7px 21px 22px 17px
+	border: 1px solid #e8e8e8
+	display: flex
+	flex-direction: column 
+	align-items: center 
+	justify-content: center		
+	position: relative 
+	&__img 
+		margin-bottom: 25px
+	&__name
+		margin-bottom: 15px 
+		font-size: 16px
+		// +op-semi
+	&__article
+		font-size: 13px
+		margin-bottom: 18px
+		// +op-reg
+	&__price 
+		display: flex 
+		justify-content: space-between 
+		width: 100%
+	&__cart 
+		display: flex 
+		justify-content: center
+		align-items: center
+		width: 57px
+		height: 37px
+		background-color: $main-color
+		border-radius: 12px
+		&-icon 
+			width: 20px
+			height: 18px
+			color: #ffffff
+
+.label-discount 
+	position: absolute
+	top: 18px
+	left: 19px
+	display: flex 
+	justify-content: center
+	align-items: center
+	width: 42px
+	height: 42px
+	border-radius: 50%
+	background-color: $bg-label-sale
+	&__icon 
+		width: 25px
+		height: 27px
+
+.label-new 
+	position: absolute
+	display: flex 
+	justify-content: center
+	align-items: center
+	width: 42px
+	height: 42px
+	border-radius: 50%
+	background-color: $bg-label-new
+	&__text 
+		color: #da7566
+		// +op-semi
+		font-size: 10px
+		line-height: 42px
+		text-align: center
+		text-transform: uppercase
+
+		

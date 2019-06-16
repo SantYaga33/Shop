@@ -1,0 +1,61 @@
+.header
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 40px 0
+	&-contacts
+		display: flex
+		align-items: center
+		&:before 
+			width: 29px
+			height: 30px
+			content: ''
+			margin-right: 15px
+			background: url('../img/header/icon-phone.svg')
+	&-phone
+		text-decoration: none
+		display: block
+		color: $text-color
+	&-icons 
+		display: flex	
+		&__item
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin-right: 40px
+			&:last-child 
+				position: relative
+				margin-right: 0
+				&:after 
+					content: '4'
+					position: absolute
+					color: #fff
+					line-height: 23px
+					text-align: center
+					top: -4px
+					left: 20px
+					width: 23px
+					height: 23px
+					border-radius: 50%
+					background-color: #ffc740
+
+			&-img 
+				display: flex
+				justify-content: center
+				align-items: center
+				max-width: 35px
+				min-height: 34px
+				margin-bottom: 3px
+			&-text 
+				color: #393939
+				// +op-semi
+				font-size: 12px
+				line-height: 21px
+				text-align: center			
+.button-header	
+	margin-left: 22px
+.nav 
+	min-height: 65px
+	background-color: $main-color
