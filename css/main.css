@@ -467,9 +467,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
-  border: 1px solid #a7e3f7;
+  border-top: 1px solid #a7e3f7;
   background: #e5f7fd;
-  padding: 48px 0 50px 0;
+  padding-top: 48px;
   font-size: 14px;
 }
 .footer__title {
@@ -492,6 +492,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer__block-item {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
+  margin-bottom: 50px;
 }
 .footer__link {
   display: block;
@@ -541,4 +542,21 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #00b5ee;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 34px 0 37px 0;
+  border-top: 1px solid #a7e3f7;
+}
+.footer__copyright-img {
+  margin-right: 4px;
+}
+.footer__copyright-text {
+  opacity: 0.7;
+  font-size: 13px;
 }
