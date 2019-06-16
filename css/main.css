@@ -33,6 +33,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 11px;
   color: #00b5ee;
   border-radius: 18px;
+  cursor: pointer;
+  outline: none;
 }
 
 .section {
@@ -213,6 +215,8 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 40px;
+  text-decoration: none;
+  cursor: pointer;
 }
 .header-icons__item:last-child {
   position: relative;
@@ -533,7 +537,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 31px;
   padding: 8px;
   border: 1px solid #000;
-  color: #000;
+  border-radius: 4px;
   margin-right: 15px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
