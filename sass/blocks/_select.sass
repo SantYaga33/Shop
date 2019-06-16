@@ -1,0 +1,81 @@
+.select 
+	&__block 
+		display: flex 
+		justify-content: space-between 
+		flex-wrap: wrap 
+	&__title 
+		text-align: start 
+		margin-bottom: 35px
+		&:after 
+			margin: 0
+			margin-top: 20px
+	&__wrap
+		display: flex 
+		justify-content: space-between
+		margin-bottom: 29px		
+	&__list
+		height: 51px
+		min-width: 263px
+		color: #242021
+		+op-light
+		border: 1px solid #95dbf1
+		background-color: #ffffff
+		font-size: 14px
+		opacity: 0.7
+		padding-left: 21px
+		outline: none
+		&-item 
+			outline: none
+			background-color: green 
+	&__groop 
+		display: inline
+		padding: 0
+		margin: 0
+		text-decoration: none
+		&-wrap 
+			margin-bottom: 30px
+		&-img
+			display: inline
+			width: 6px
+			height: 9px
+			color: #898989
+			margin: 0 5px
+		&-item 
+			display: inline
+		&-link 
+			text-decoration: none
+			color: $text-color
+	&__paginate 
+		text-align: center
+		&-groop
+			display: flex
+			justify-content: center
+			list-style: none
+			margin: 0
+			padding: 0
+			text-align: center		
+		&-li
+			display: inline
+		&-link  
+			margin-right: 2px
+			padding: 11px 14px
+			display: inline-block
+			border: 1px solid #dedede
+			text-decoration: none
+			color: #dedede
+			font-size: 13px
+			+rb-light 
+			background-color: #f5f5f5
+			&:hover
+				border: 1px solid $main-color
+				color: $main-color
+		&_more 
+			box-shadow: 0 0 0 0 transparent
+			border: 0 none
+			background: transparent
+			margin-left: 0
+			margin-right: 0
+		&_active 
+			border: 1px solid $main-color
+			color: $main-color
+
