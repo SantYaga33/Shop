@@ -3,10 +3,11 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-		padding: 31px 0
+		padding: 31px 0 32px 0
 	&-contacts
 		display: flex
 		align-items: center
+		flex-basis: 33%
 		&:before 
 			width: 29px
 			height: 30px
@@ -17,6 +18,14 @@
 		text-decoration: none
 		display: block
 		color: $text-color
+	&-logo__wrap 
+		flex-basis: 33%
+		display: flex 
+		justify-content: center
+	&-icons__wrap 
+		display: flex
+		justify-content: flex-end
+		flex-basis: 33%
 	&-icons 
 		display: flex	
 		&__item
@@ -49,12 +58,10 @@
 				align-items: center
 				max-width: 35px
 				min-height: 34px
-				margin-bottom: 3px
 			&-text 
 				color: #393939
 				+op-semy  
 				font-size: 12px
-				line-height: 21px
 				text-align: center			
 .button-header	
 	margin-left: 22px
@@ -70,6 +77,9 @@
 		display: flex 
 		justify-content: space-between
 		align-items: center
+	&__select-groop
+		display: flex
+		align-items: center	
 	&__burger-wrap
 		width: 20px
 		height: 16px
@@ -95,60 +105,91 @@
 	transform: translateY(6px)
 
 
+// == стили для выпадающего списка ==
 
-// .nav *
-// 	margin: 0
-// 	padding: 0
+.nav
+	&__select
+		position: relative
+		&-sub
+			position: relative
+		&-sub2 	
+			position: relative
+		&-sub3 	
+			position: relative	
+		&-arrow 
+			position: absolute
+			top: 23px 
+			right: 14px
+		&-groop	> ul 
+			list-style: none
+			display: flex
+		&-groop > ul li a
+			display: block
+			padding: 27px 48px 24px 24px
+			font-size: 14px
+			color: #fff
+			text-decoration: none
+			font-size: 15px
+			+op-semy
+		&-icon 
+			position: absolute
+			top: 34px 
+			right: 16px
+			width: 11px
+			height: 6px
+			cursor: pointer
+		&-groop li ul 
+			position: absolute
+			list-style: none
+			min-width: 299px 
+			z-index: 100
+			display: none 
+		&-groop li > ul li 
+			border-bottom: 1px solid #e0f7fa
+		&-groop li > ul li a 
+			background-color: #fff
+			padding: 20px 
+			font-size: 15px
+			color: #242021
+			+op-semy 
+		&-groop li > ul li ul 
+			position: absolute
+			right: -299px
+			top: 0
+		&-groop li > ul li ul li ul
+			position: absolute
+			right: -299px
+			top: 0
+		&-groop ul > li .nav__select_blue:hover 
+			background-color: #04a6d9
+		&-groop li a:hover 
+			background-color: #e0f7fa	
+		&-groop li:hover > ul
+			display: block 
+	&__input-search 
+		max-width: 400px
+		color: #000
+		font-size: 13px
+		+op-light
+		padding: 16px 247px 17px 22px
+		border-radius: 21px
+		border: none 
+		outline: none
+	&__input-wrap
+		position: relative
+	&__search-icon 
+		position: absolute
+		top: 16px
+		right: 20px 
+		width: 18px
+		height: 18px
 
-// .nav ul
-// 	list-style: none
-
-// .nav > ul
-// 	display: flex
-// 	justify-content: center
-
-// .nav > ul li
-// 	position: relative
-
-// .nav > ul li > a i.fa
-// 	position: absolute
-// 	top: 15px
-// 	left: 12px
-// 	font-size: 18px
-
-// .nav > ul li a
-// 	display: block
-// 	padding: 15px 30px 15px 40px
-// 	font-size: 14px
-// 	color: #454547
-// 	text-decoration: none
-// 	text-transform:uppercase
-// 	transition: all 0.3s ease
-
-// .nav li a:hover
-// 	color: #ffffff
-// 	box-shadow: 1px 5px 10px -5px black
-// 	transition: all 0.3s ease
+.nav__
+	&-sub
+		position: relative
+	&-arrow 
+		position: absolute
+		top: 19px 
+		right: 14px
 
 
-// /*sub menu*/
-// .nav li ul
-// 	position: absolute
-// 	min-width: 150px
-// 	display: none
-
-// .nav li > ul li
-// 	border: 1px solid #c7c8ca
-
-// .nav li > ul li a
-// 	padding: 10px
-// 	text-transform: none
-// 	background: #e4e4e5
-
-// .nav li > ul li ul
-// 	position: absolute
-// 	right: -150px
-// 	top: 0
-
-// .nav li:hover > ul
-// 	display: block
