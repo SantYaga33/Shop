@@ -1,12 +1,15 @@
 *
 	box-sizing: border-box 
+	margin: 0
+	padding: 0
 
 body
 	+op-reg 
 	color: $text-color
+	position: relative
 	
-a 
-	cursor: pointer
+// a 
+	cursyr: pointer
 	
 img 
 	max-width: 100%
@@ -29,13 +32,14 @@ h1, h2, h3, h4, h5, h6
 	border-radius: 18px
 	cursor: pointer
 	outline: none
-	// +op-reg
+	+op-reg
+	transition: all 0.3s ease
 
 .section 
 	padding: 54px
 
 .section__title 
-	// +op-semi
+	+op-semy
 	font-size: 26px
 	line-height: 21px
 	text-align: center
@@ -48,6 +52,31 @@ h1, h2, h3, h4, h5, h6
 		margin-top: 20px
 		background-color: #dddddd
 
+
+// == стили для стрелки UP ==
+.arrowup 
+	display: flex 
+	justify-content: center
+	align-items: center
+	width: 60px
+	height: 60px
+	position: fixed
+	right: 30px
+	bottom: 40px
+	cursor: pointer
+	border: 1px solid $main-color 
+	background-color: $main-color
+	border-radius: 50%
+	transition: all 0.3s ease
+	&:hover 
+		background-color: #fff
+		transition: all 0.3s ease
+		path
+			fill: $main-color
+			transition: all 0.3s ease 
+
+
+
 .card 
 	width: 263px
 	padding: 7px 21px 22px 17px
@@ -59,14 +88,15 @@ h1, h2, h3, h4, h5, h6
 	position: relative 
 	&__img 
 		margin-bottom: 25px
+		min-height: 240px
 	&__name
 		margin-bottom: 15px 
 		font-size: 16px
-		// +op-semi
+		+op-semy
 	&__article
 		font-size: 13px
 		margin-bottom: 18px
-		// +op-reg
+		+op-reg
 	&__price 
 		display: flex 
 		justify-content: space-between 
@@ -75,15 +105,20 @@ h1, h2, h3, h4, h5, h6
 		display: flex 
 		justify-content: center
 		align-items: center
-		width: 57px
-		height: 37px
+		width: 56px
+		height: 36px
+		border: 1px solid $main-color
 		background-color: $main-color
 		border-radius: 12px
+		transition: all 0.3s ease
+		&:hover 
+			background-color: #fff
+			transition: all 0.3s ease
 		&-icon 
 			width: 20px
 			height: 18px
-			color: #ffffff
-
+			color: $main-color
+	
 .label-discount 
 	position: absolute
 	top: 18px
@@ -110,7 +145,7 @@ h1, h2, h3, h4, h5, h6
 	background-color: $bg-label-new
 	&__text 
 		color: #da7566
-		// +op-semi
+		+op-semy
 		font-size: 10px
 		line-height: 42px
 		text-align: center
