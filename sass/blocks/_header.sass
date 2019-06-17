@@ -66,3 +66,89 @@
 .nav 
 	min-height: 65px
 	background-color: $main-color
+	&__wrap 
+		display: flex 
+		justify-content: space-between
+		align-items: center
+	&__burger-wrap
+		width: 20px
+		height: 16px
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+	&__burger
+		opacity: 1
+		transition: all .2s ease
+.nav__burger, .nav__burger:before, .nav__burger:after 
+	content: ''
+	width: 20px
+	height: 1px
+	background-color: #fff
+	position: absolute
+	transition: all .2s ease
+
+.nav__burger:before 
+	transform: translateY(-6px)
+
+.nav__burger:after 
+	transform: translateY(6px)
+
+
+
+// .nav *
+// 	margin: 0
+// 	padding: 0
+
+// .nav ul
+// 	list-style: none
+
+// .nav > ul
+// 	display: flex
+// 	justify-content: center
+
+// .nav > ul li
+// 	position: relative
+
+// .nav > ul li > a i.fa
+// 	position: absolute
+// 	top: 15px
+// 	left: 12px
+// 	font-size: 18px
+
+// .nav > ul li a
+// 	display: block
+// 	padding: 15px 30px 15px 40px
+// 	font-size: 14px
+// 	color: #454547
+// 	text-decoration: none
+// 	text-transform:uppercase
+// 	transition: all 0.3s ease
+
+// .nav li a:hover
+// 	color: #ffffff
+// 	box-shadow: 1px 5px 10px -5px black
+// 	transition: all 0.3s ease
+
+
+// /*sub menu*/
+// .nav li ul
+// 	position: absolute
+// 	min-width: 150px
+// 	display: none
+
+// .nav li > ul li
+// 	border: 1px solid #c7c8ca
+
+// .nav li > ul li a
+// 	padding: 10px
+// 	text-transform: none
+// 	background: #e4e4e5
+
+// .nav li > ul li ul
+// 	position: absolute
+// 	right: -150px
+// 	top: 0
+
+// .nav li:hover > ul
+// 	display: block

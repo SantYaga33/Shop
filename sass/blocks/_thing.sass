@@ -125,4 +125,101 @@
 		width: 11px
 		height: 35px
 		cursor: pointer
+.thing 
+	&__tab 
+	&__input 
+		display: none
+		&:checked + label
+			color: $main-color
+			+op-bold
+			position: relative
+			&:after
+				content: ''
+				display: inline-block
+				position: absolute
+				left: 0
+				bottom: 23px
+				// width: calc(100%-30px)
+				width: 100%
+				height: 3px
+				background-color: $main-color 
+	&__label 
+		cursor: pointer
+		display: inline-block
+		padding: 0 30px 56px 0
+		font-size: 16px
+		+op-semy 
+		color: $text-color
+	&__content
+		position: relative	
+	&__article 
+		position: absolute 
+		top: 0
+		left: 0
+		width: 100%
+		display: none
 
+input[id="tab-1"]:checked ~ .thing__content .thing__tab-1,
+input[id="tab-2"]:checked ~ .thing__content .thing__tab-2,
+input[id="tab-3"]:checked ~ .thing__content .thing__tab-3,
+input[id="tab-4"]:checked ~ .thing__content .thing__tab-4,
+input[id="tab-5"]:checked ~ .thing__content .thing__tab-5,
+input[id="tab-6"]:checked ~ .thing__content .thing__tab-6
+	display: block
+
+.article 
+	&__groop
+		&-wrap 
+			margin-right: 145px
+			display: flex
+		&-item 
+			margin-right: 60px
+.thing
+	&__article-groop
+		display: flex		
+	&__article-link
+		color: #666666
+		+op-reg
+		font-size: 14px
+		margin-bottom: 40px
+		display: block
+		&_bold 
+			+op-bold
+	&__like 
+		&-block 
+			display: flex
+		&-title
+			color: $text-color
+			+op-semy
+			font-size: 26px
+			margin-bottom: 34px
+			text-align: start
+			&:after 
+				margin: 0
+				margin-top: 20px
+		&-item 
+			max-width: 208px
+			max-height: 306px
+			border: 1px solid #e8e8e8
+	&__like-item
+		padding-bottom: 25px
+		display: flex 
+		flex-direction: column 
+		align-items: center
+		margin-right: 25px
+
+.like-item
+	&__img 
+		margin-bottom: 22px
+	&__title
+		width: 163px
+		color: $text-color
+		+op-bold
+		font-size: 15px
+		line-height: 18px
+		margin-bottom: 20px
+		text-align: center
+	&__price 
+		+rb-bold
+		font-size: 18px
+		color: $text-color

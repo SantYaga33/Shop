@@ -79,13 +79,15 @@ h1, h2, h3, h4, h5, h6
 
 .card 
 	width: 263px
-	padding: 7px 21px 22px 17px
+	padding: 0 21px 22px 17px
 	border: 1px solid #e8e8e8
 	display: flex
 	flex-direction: column 
 	align-items: center 
 	justify-content: center		
 	position: relative 
+	&:hover
+		box-shadow: 0 0 13px rgba(0, 0, 0, 0.12)
 	&__img 
 		margin-bottom: 25px
 		min-height: 240px
@@ -109,7 +111,7 @@ h1, h2, h3, h4, h5, h6
 		height: 36px
 		border: 1px solid $main-color
 		background-color: $main-color
-		border-radius: 12px
+		border-radius: 27px
 		transition: all 0.3s ease
 		&:hover 
 			background-color: #fff
