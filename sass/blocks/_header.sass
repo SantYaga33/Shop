@@ -166,7 +166,7 @@
 		&-groop li a:hover 
 			background-color: #e0f7fa	
 		&-groop li:hover > ul
-			display: block 
+			display: block
 	&__input-search 
 		max-width: 400px
 		color: #000
@@ -193,4 +193,20 @@
 		top: 19px 
 		right: 14px
 
+// ==  стили для подложки под списки ==
+.nav 
+	position: relative
+	&__mat 
+		position: absolute
+		top: 68px
+		left: 0
+		width: 100vw
+		min-height: 0
+		background-color: #fff
+		box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15)
+		z-index: 50
+		opacity: 0
 
+.hover:hover .nav__mat 
+	opacity: 1 
+	min-height: 470px 
