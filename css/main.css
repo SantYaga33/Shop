@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button {
-  padding: 12px 24px;
+  padding: 12px 25px;
   border: 1px solid #00b5ee;
   background-color: #ffffff;
   font-size: 11px;
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   width: 66px;
   height: 1px;
-  margin-top: 20px;
+  margin-top: 18px;
   background-color: #dddddd;
 }
 
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card {
   width: 263px;
-  padding: 0 21px 22px 17px;
+  padding: 7px 16px 22px 17px;
   border: 1px solid #e8e8e8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 240px;
 }
 .card__name {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: 16px;
   font-family: "OpenSans-Semibold", sans-serif;
   font-weight: 600;
@@ -142,6 +142,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 .card__cart {
@@ -473,6 +476,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 16px;
 }
 .nav__burger {
   opacity: 1;
@@ -525,7 +529,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav__select-groop > ul li a {
   display: block;
-  padding: 27px 48px 24px 24px;
+  padding: 27px 49px 24px 24px;
   font-size: 14px;
   color: #fff;
   text-decoration: none;
@@ -536,7 +540,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav__select-icon {
   position: absolute;
   top: 34px;
-  right: 16px;
+  right: 20px;
   width: 11px;
   height: 6px;
   cursor: pointer;
@@ -653,7 +657,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ffffff;
   opacity: 0.8;
   font-size: 21px;
-  padding: 30px 0;
+  padding: 26px 0;
   text-align: center;
   font-family: "OpenSans-Semibold", sans-serif;
   font-weight: 600;
@@ -693,7 +697,7 @@ h1, h2, h3, h4, h5, h6 {
 .news__title {
   font-size: 20px;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 4px;
 }
 .news__title:after {
   content: "";
@@ -712,7 +716,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   font-family: "OpenSans-Regular", sans-serif;
   font-weight: 400;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
@@ -720,7 +724,7 @@ h1, h2, h3, h4, h5, h6 {
 .news__form {
   margin: 0 auto;
   display: table;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 }
 .news__form-input {
   width: 300px;
@@ -767,8 +771,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0;
 }
 
+.new {
+  padding-bottom: 32px;
+}
 .new__title {
-  margin-bottom: 46px;
+  margin-bottom: 24px;
 }
 .new__block {
   display: -webkit-box;
@@ -785,13 +792,13 @@ h1, h2, h3, h4, h5, h6 {
   left: 19px;
 }
 .new__card {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .about {
   border-top: 1px solid #a7e3f7;
   border-bottom: 1px solid #a7e3f7;
-  padding: 34px 0;
+  padding: 33px 0;
   margin-bottom: 52px;
 }
 .about__block {
@@ -828,12 +835,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 .about__item-text {
   max-width: 164px;
+  color: #393939;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .footer {
   border-top: 1px solid #a7e3f7;
   background: #e5f7fd;
-  padding-top: 48px;
+  padding-top: 12px;
   font-size: 14px;
 }
 .footer__title {
