@@ -697,12 +697,14 @@ h1, h2, h3, h4, h5, h6 {
 .news__title {
   font-size: 20px;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 9px;
 }
 .news__title:after {
   content: "";
   height: 2px;
   background-color: #00b5ee;
+  margin-top: 13px;
+  width: 60px;
 }
 .news__title-discr {
   text-align: center;
@@ -845,22 +847,23 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
   border-top: 1px solid #a7e3f7;
   background: #e5f7fd;
-  padding-top: 12px;
+  padding-top: 21px;
   font-size: 14px;
+}
+.footer__container {
+  max-width: 1268px;
+  margin: 0 auto;
 }
 .footer__title {
   font-family: "OpenSans-Bold", sans-serif;
   font-weight: 700;
-  margin-bottom: 18px;
-  margin-top: 32px;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 .footer__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .footer__block-icons {
   display: -webkit-box;
@@ -868,35 +871,49 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 .footer__block-item {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+.footer__block-item1 {
+  margin-right: 184px;
+}
+.footer__block-item2 {
+  margin-right: 115px;
+}
+.footer__block-item3 {
+  margin-right: 198px;
 }
 .footer__link {
   display: block;
   text-decoration: none;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: #393939;
+}
+.footer__link_fix {
+  margin-bottom: 27px;
 }
 .footer__link_big {
   display: block;
   text-transform: uppercase;
   text-decoration: none;
-  margin-bottom: 19px;
+  margin-bottom: 12px;
   color: #393939;
 }
 .footer__link-call {
   display: block;
   text-decoration: none;
   font-size: 16px;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
   color: #393939;
 }
 .footer__button {
   display: block;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
   color: #fff;
   background-color: #00b5ee;
+  font-family: "RobotoCondensed-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  padding-left: 22px;
 }
 .footer__button:hover {
   background-color: #fff;
@@ -920,7 +937,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 8px;
   border: 1px solid #000;
   border-radius: 4px;
-  margin-right: 15px;
+  margin-right: 14px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
