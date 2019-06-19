@@ -68,6 +68,8 @@
 			width: 28px
 			height: 26px
 			margin-right: 12px
+			text-decoration: none
+			cursor: pointer
 		&-pick 
 			color: $text-color
 			+op-semy
@@ -84,15 +86,48 @@
 		&-groop 	
 			display: flex
 		&-icon 
+			display: flex
+			align-items: center
+			justify-content: center
 			width: 41px
 			height: 41px
 			margin-right: 9px
+			border-radius: 3px
+			text-decoration: none
 			&-f 
 				background-color: #3a579a
+				border: 1px solid #3a579a
+				transition: all 0.4s ease
+				&:hover 
+					background-color: #fff
+					transition: all 0.4s ease
+					.thing__social-icon-fsvg 
+						fill: #3a579a
 			&-vk 
 				background-color: #4f75a3
+				border: 1px solid #4f75a3
+				transition: all 0.4s ease
+				&:hover 
+					background-color: #fff
+					transition: all 0.4s ease
+					.thing__social-icon-vksvg 
+						fill: #4f75a3
 			&-inst 
 				background-color: #b1388f
+				border: 1px solid #b1388f
+				transition: all 0.4s ease
+				&:hover 
+					background-color: #fff
+					transition: all 0.4s ease
+					.thing__social-icon-instsvg 
+						fill: #b1388f
+
+			&-instsvg
+				fill: #fff
+			&-vksvg 
+				fill: #fff
+			&-fsvg 
+				fill: #fff
 	&__slide 
 		margin-bottom: 67px
 		&-img 
@@ -217,7 +252,7 @@
 			width: 100%
 			height: 1px
 			background-color: #e6ecf3
-			bottom: 54px 
+			bottom: 50px 
 			left: 0
 	&__input 
 		display: none
@@ -289,6 +324,8 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6
 		margin-bottom: 15px
 		border-bottom: 1px solid #e6ecf3
 		padding-bottom: 14px
+		&_fixborder 
+			border: none
 		&_bold 
 			+op-bold
 	&__like 

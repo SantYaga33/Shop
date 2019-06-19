@@ -57,6 +57,7 @@
 			color: $main-color 
 			transition: all 0.3s ease			 
 	&__icon 
+		position: relative
 		display: flex
 		justify-content: center
 		align-items: center
@@ -68,6 +69,7 @@
 		border-radius: 4px
 		margin-right: 14px
 		transition: all .3s ease
+		cursor: pointer
 		&:hover 
 			border: 1px solid $main-color
 			transition: all .3s ease	
@@ -100,9 +102,21 @@
 	width: 196px
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.12)
 	background-color: #ffffff	
+	&__vk
+		left: -80px 
+		bottom: -150px
+		opacity: 0
+		display: none
 	&__facebook
-		left: -25px 
-		bottom: -65px
+		left: -82px 
+		bottom: -150px
+		opacity: 0
+		display: none
+	&__insta
+		left: -82px 
+		bottom: -150px
+		opacity: 0
+		display: none
 	&__text
 		position: relative 
 		width: 153px
@@ -122,9 +136,39 @@
 		color: $text-color
 		+op-semy
 		font-size: 14px
+	&__arrow 
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		top: -18px
+		width: 0
+		height: 0
+		border: 18px solid transparent
+		border-bottom-color: #fff
+		border-top: 0
 
+.footer__icon:hover .tooltip__vk 
+	display: flex
+	animation: tooltip 0.6s ease forwards
+.footer__icon:hover .tooltip__facebook 
+	display: flex
+	animation: tooltip 0.6s ease forwards
+.footer__icon:hover .tooltip__insta 
+	display: flex
+	animation: tooltip 0.6s ease forwards
 
+@keyframes tooltip 
+	0%
+		opacity: 0
+		bottom: -150px 
+	100% 
+		opacity: 1
+		bottom: -80px 
+  
 
+   
+
+  
 
 // .tooltip
 //   position relative
@@ -137,8 +181,7 @@
   
 //   &:hover
 //     .tooltip-content
-//       display block
-//       animation tooltip .7s ease forwards
+//      
       
 // .tooltip-content
 //   display none
