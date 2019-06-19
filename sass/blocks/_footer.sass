@@ -16,6 +16,7 @@
 		display: flex
 		&-icons 
 			display: flex
+			position: relative
 		&-item 
 			margin-bottom: 40px
 		&-item1
@@ -91,4 +92,104 @@
 	transition: all 0.2s ease
 
 
+// == стили для tooltip ==
+.tooltip 
+	position: absolute
+	display: flex
+	padding: 14px 21px
+	width: 196px
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.12)
+	background-color: #ffffff	
+	&__facebook
+		left: -25px 
+		bottom: -65px
+	&__text
+		position: relative 
+		width: 153px
+		color: $text-color
+		+op-semy
+		font-size: 14px
+		&:after 
+			content: ''
+			width: 1px
+			height: 100%
+			background-color: $text-color
+			display: block
+			position: absolute
+			right: 10px
+			bottom: 0px   
+	&__count 
+		color: $text-color
+		+op-semy
+		font-size: 14px
 
+
+
+
+// .tooltip
+//   position relative
+//   width 100%
+//   max-width 200px
+//   height 50px
+//   margin 200px auto
+//   border 1px solid gray
+//   cursor pointer
+  
+//   &:hover
+//     .tooltip-content
+//       display block
+//       animation tooltip .7s ease forwards
+      
+// .tooltip-content
+//   display none
+//   opacity 0
+//   position absolute
+//   bottom calc(100% + 50px)
+//   left 50%
+//   transform translateX(-50%)
+//   width 100%
+//   max-width 350px
+//   min-width 300px
+//   padding 5px
+//   border 1px solid #e9e9e9
+//   box-shadow 0 8px 16px 0 rgba(0,0,0,.15)
+  
+// .tooltip-arrow
+//   position absolute
+//   z-index 1
+//   bottom -15px
+//   left 50%
+//   transform translateX(-50%)
+//   width 20px
+//   height 25px
+//   overflow hidden
+  
+//   &:before
+//     content ''
+//     position absolute
+//     top -4px
+//     left 50%
+//     width 20px
+//     height 20px
+//     background-color #fff
+//     transform translateX(-50%) rotate(45deg)
+//     box-shadow 8px 8px 9px -4px rgba(0,0,0,.15)
+  
+  
+  
+  
+  
+  
+  
+  
+  
+// @keyframes tooltip {
+//   0% {
+    
+//   }
+//   100% {
+//     opacity 1
+//     bottom calc(100% + 30px)
+//   }
+// }
+//   
