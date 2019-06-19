@@ -30,7 +30,7 @@
 								</a>
 								<a href="#" class="header-icons__item">
 									<div class="header-icons__item-img">
-										<img src="img/header/shopping-cart (1).svg" alt="иконка">
+										<img src="img/header/shopping-cart.svg" alt="иконка">
 									</div>
 									<span class="header-icons__item-text">Корзина</span>
 								</a>
@@ -46,11 +46,13 @@
 				  	<div class="nav__burger-wrap">
 							<div class="nav__burger"></div>
 						</div>
-				  	<ul>
+				  	<ul class="hover">
+				  		<div class="nav__mat"></div>
 				  		<li class="nav__select"><a href="#" class="nav__select_blue">Одежда
 				  			<div class="nav__select-icon">
 				  			<img src="img/header/arrow-list.png" alt="стрелка">
-				  			</div></a>
+				  			</div>
+				  		</a>
 				  			<ul>
 
 			  					<li class="nav__select-sub"><a href="#">Одежда и обувь
@@ -114,7 +116,7 @@
 						  				<img src="img/header/arrow-list-right.png" alt="стрелка">
 						  			</div></a>
 						  		</li>
-				  				</li>
+				  			<!-- 	</li> -->
 				  			</ul>
 				  		</li>
 
@@ -231,13 +233,13 @@
 				  	</ul> 
 		  	  </div>
 
-		  	  	<div class="nav__input-wrap">
-					  	<input type="text" class="nav__input-search" placeholder="Что Вы хотите найти?" maxlength="300">
-					  	<div class="nav__search-icon">
-					  		<img src="img/header/search-icon.jpg" alt="лупа">
-					  	</div>
+	  	  	<div class="nav__input-wrap">
+				  	<input type="text" class="nav__input-search" placeholder="Что Вы хотите найти?" maxlength="300">
+				  	<div class="nav__search-icon">
+				  		<img src="img/header/search-icon.jpg" alt="лупа">
 				  	</div>
-			 	</div>  
-			</div>  
+			  	</div>
+		 		</div> 
+			</div>
 		</nav>
 	</header>
