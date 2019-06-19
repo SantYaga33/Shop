@@ -1654,7 +1654,7 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
   margin-top: 17px;
 }
 .thing__like-item {
-  max-width: 208px;
+  width: 208px;
   max-height: 306px;
   border: 1px solid #e8e8e8;
 }
@@ -1670,11 +1670,14 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 25px;
+  margin-right: 24px;
+}
+.thing__like-item:last-child {
+  margin-right: 0;
 }
 
 .like-item__img {
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 }
 .like-item__title {
   width: 163px;
@@ -1683,7 +1686,7 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   text-align: center;
 }
 .like-item__price {
