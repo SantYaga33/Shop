@@ -173,7 +173,18 @@ h1, h2, h3, h4, h5, h6 {
 .card__cart-icon {
   width: 20px;
   height: 18px;
-  color: #00b5ee;
+}
+
+.card__cart-svg {
+  fill: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card__cart:hover .card__cart-svg {
+  fill: #00b5ee;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .label-discount {
@@ -873,6 +884,21 @@ h1, h2, h3, h4, h5, h6 {
   height: 38px;
   margin-right: 5px;
 }
+.about__item-icon1 {
+  margin-right: 8px;
+}
+.about__item-icon2 {
+  margin-right: 10px;
+}
+.about__item-icon3 {
+  margin-right: 10px;
+}
+.about__item-icon4 {
+  margin-right: 1px;
+}
+.about__item-icon5 {
+  margin-right: 9px;
+}
 .about__item-text {
   max-width: 164px;
   color: #393939;
@@ -882,10 +908,23 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 18px;
 }
 
+.about__item1 {
+  margin-right: 33px;
+}
+.about__item2 {
+  margin-right: 9px;
+}
+.about__item3 {
+  margin-right: 32px;
+}
+.about__item4 {
+  margin-right: 40px;
+}
+
 .footer {
   border-top: 1px solid #a7e3f7;
   background: #e5f7fd;
-  padding-top: 21px;
+  padding-top: 20px;
   font-size: 14px;
 }
 .footer__container {
@@ -896,7 +935,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "OpenSans-Bold", sans-serif;
   font-weight: 700;
   margin-top: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+}
+.footer__title-fix {
+  margin-bottom: 16px;
 }
 .footer__block {
   display: -webkit-box;
@@ -1002,6 +1044,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "OpenSans-Light", sans-serif;
   font-weight: 300;
   font-size: 13px;
+}
+
+.footer__icon-svg {
+  fill: #393939;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footer__icon:hover .footer__icon-svg {
+  fill: #00b5ee;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .select__block {

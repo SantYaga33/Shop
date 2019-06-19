@@ -120,7 +120,15 @@ h1, h2, h3, h4, h5, h6
 		&-icon 
 			width: 20px
 			height: 18px
-			color: $main-color
+			
+// == стили под ховер svg корзинки ==
+.card__cart-svg 
+	fill: #fff
+	transition: all 0.3s ease
+.card__cart:hover .card__cart-svg 
+	fill: $main-color
+	transition: all 0.3s ease
+
 	
 .label-discount 
 	position: absolute
