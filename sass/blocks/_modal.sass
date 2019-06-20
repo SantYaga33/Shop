@@ -36,42 +36,59 @@
 			background-color: $main-color
 			cursor: pointer
 	&__body 
-		padding: 43px 28px 36px 29px
+		padding: 33px 28px 22px 29px
 		background-color: #fff
 		display: flex
 		position: relative
 		&-img 
 			max-width: 165px
+			margin-right: 29px
 		&-groop 
 			display: flex
-			justify-content: space-between
+			padding-top: 8px
 		&-title 
 			display: block	
 			width: 126px
 			+op-semy
 			color: $text-color
 			font-size: 16px
-			margin-bottom: 13px
+			margin-bottom: 8px
+		&-title1
+			margin-right: 122px
+		&-title2
+			margin-right: 32px
+		&-title3
+			width: 80px
+			margin-right: 43px
+		&-title4
+			margin-right: 2px
 		&-subtitle 
 			display: block
 			width: 126px
 			+op-light
 			color: $text-color
 			font-size: 16px
+			&_fixwide
+				width: 187px	
+			&_fixwide1
+				width: 80px	
 		&-summ 
 			position: absolute 
-			bottom: 40px 
-			right: 28px
+			bottom: 37px 
+			right: 31px
 			display: flex
 		&-incart
 			color: $text-color
 			+op-semy
 			font-size: 16px
-			margin-right: 2px
+			margin-right: 5px
 		&-count 
 			color: $main-color
 			font-size: 16px
 		&-button 
+			position: absolute
+			right: 29px
+			top: 55px
 			width: 25px
 			height: 25px
 			border: none 
@@ -91,24 +108,24 @@
 		display: flex 
 		justify-content: flex-end 
 		align-items: center
-		padding: 22px 28px 20px 0
+		padding: 21px 31px 21px 0
 		&-text 
 			color: $text-color
 			+op-semy
 			font-size: 16px
-			margin-right: 2px
+			margin-right: 8px
 		&-cost
 			color: $main-color
 			font-size: 24px
 		&-buttons 
-			padding: 32px 29px 26px 29px 
+			padding: 28px 29px 32px 28px 
 			background-color: #fff	
 			display: flex
 			justify-content: space-between
 	&__button-continue 
 		border: 1px solid $text-color
 		background-color: #ffffff
-		padding: 17px 34px 16px 31px
+		padding: 17px 38px 16px 30px
 		color: #2c2c2c
 		+op-semy
 		font-size: 16px
@@ -130,7 +147,7 @@
 		box-shadow: 0 0 7px rgba(0, 0, 0, 0.28)
 		border: 1px solid #f1d6da
 		background-color: #ffffff
-		padding: 39px 63px 43px 63px
+		padding: 35px 63px 43px 63px
 		display: flex
 		flex-direction: column
 		justify-content: center
@@ -139,20 +156,20 @@
 			color: $text-color
 			font-size: 16px
 			+op-semy
-			margin-bottom: 25px
+			margin-bottom: 20px
 	&__button-in 
 		color: #ffffff
 		font-size: 16px
 		+op-semy
 		border-radius: 25px
-		padding: 16px 32px 20px 31px
+		padding: 16px 34px 16px 31px
 		background-color: $main-color
-		margin-bottom: 11px
+		margin-bottom: 9px
 		border-radius: 25px
 	&__button-out 
 		border: 1px solid $text-color
 		background-color: #ffffff
-		padding: 18px 70px 
+		padding: 15px 72px 
 		color: $text-color
 		+op-semy
 		font-size: 16px
@@ -165,7 +182,7 @@
 	color: #242021
 	+op-light
 	font-size: 14px
-	padding: 19px 0 18px 21px
+	padding: 18px 0 18px 21px
 	border: 1px solid #95dbf1
 	outline: none
 	display: block
@@ -184,7 +201,7 @@
 	&__header 
 		display: flex
 		justify-content: space-between
-		padding: 22px 35px 19px 35px
+		padding: 22px 15px 19px 31px
 		background-color: $main-color
 		&-title 
 			color: #ffffff
@@ -198,7 +215,7 @@
 			background-color: $main-color
 			cursor: pointer	
 	&__body 
-		padding: 26px 30px 35px 30px 
+		padding: 35px 30px 32px 30px 
 		background-color: #fff
 		display: flex 
 		justify-content: center 
@@ -211,7 +228,7 @@
 			width: 539px
 			max-height: 139px
 			background-color: #ffffff
-			padding: 20px 0 0 21px
+			padding: 14px 0 0 21px
 			opacity: 0.7
 			color: #242021
 			+op-light
@@ -219,7 +236,7 @@
 			line-height: 15px
 			border: 1px solid #95dbf1
 			outline: none
-			margin-bottom: 18px
+			margin-bottom: 14px
 	&__button 
 		padding: 17px 43px 16px 43px 
 		color: #ffffff
@@ -233,9 +250,9 @@
 	&__buy 
 		max-width: 598px 
 		&-input-email 
-			margin-bottom: 11px
+			margin-bottom: 8px
 		&-input-tel 
-			margin-bottom: 17px	
+			margin-bottom: 13px	
 
 // == стили для формы регистрация ==
 .form
@@ -246,31 +263,31 @@
 			color: $text-color
 			+op-semy
 			font-size: 16px
-			margin-bottom: 18px
+			margin-bottom: 13px
 			display: block
 		&-reg 
-			padding: 36px 0 0 30px
+			padding: 34px 0 0 30px
 			background-color: #fff
 			margin-bottom: 6px
 		&-block
 			display: flex
 			&-social 
 				padding-left: 57px
+				margin-bottom: -10px
 	&__input-reg
 		max-width: 331px
-		margin-bottom: 11px
+		margin-bottom: 8px
 		&:last-child 
-			margin-bottom: 17px
+			margin-bottom: 5px
 	&__body 
 		&-autor
 			margin-bottom: 25px
 		&-social 
 			&-item 
-				max-width: 212px
+				width: 212px
 				height: 48px
 				display: flex 
 				align-items: center
-				padding-left: 10px
 				border-radius: 3px
 				margin-bottom: 8px
 				text-decoration: none
@@ -289,8 +306,8 @@
 			color: $text-color
 			+op-light
 			font-size: 14px
-			padding-left: 14px
-			padding-right: 76px
+			padding-left: 17px
+			padding-right: 74px
 			cursor: pointer
 			display: flex
 			margin-left: 14px
@@ -303,17 +320,21 @@
 		&-reg 
 			margin: 0 auto
 			display: block
-			margin-bottom: 34px
+			margin-bottom: 31px
+			padding: 17px 34px 16px 38px
 	&__button
 		&-autor 
 			color: #ffffff
 			font-size: 16px
 			+op-semy
-			padding: 17px 68px
+			padding: 17px 67px
 			border-radius: 25px
 			display: block
 			margin: 0 auto
-			margin-bottom: 39px
+			margin-bottom: 38px
+
+.form__input-autor
+	margin-bottom: -5px			
 
 // == стилизуем чекбокс ==
 input[type="checkbox"]:checked + label, 
@@ -332,7 +353,7 @@ input[type="checkbox"]:not(:checked) + label:before
 	height: 19px
 	border: 1px solid #95dbf1
 	background-color: #ffffff 
-	left: -14px
+	left: -17px
 	top: -3px
 	display: block
 	border-radius: 50%
@@ -342,7 +363,7 @@ input[type="checkbox"]:checked + label:after
 	background: url('../img/modal/check-symbol.svg') no-repeat
 	width: 19px
 	height: 19px
-	left: -10px
+	left: -12px
 	top: -6px
 	display: block
 
@@ -350,13 +371,13 @@ input[type="checkbox"]:checked + label:after
 	color: #ffffff
 	+op-semy
 	font-size: 14px
-	padding-left: 9px
 	position: relative
+	padding-left: 10px
 	&:before 
 		position: absolute
 		content: ''
 		top : -13px
-		left: 0
+		left: -8px
 		background-color: #fff
 		width: 1px
 		height: 42px
