@@ -78,6 +78,14 @@
 			outline: none
 			cursor: pointer
 			background-color: #fff
+			.close-svg 
+				fill: #f87190
+				transform: scale(1)
+				transition: all .3s ease
+				&:hover 
+					fill: red
+					transform: scale(1.1)
+					transition: all .3s ease
 	&__footer 
 		background-color: #e0f7fa
 		display: flex 
@@ -144,7 +152,7 @@
 	&__button-out 
 		border: 1px solid $text-color
 		background-color: #ffffff
-		padding: 16px 74px 20px 74px
+		padding: 18px 70px 
 		color: $text-color
 		+op-semy
 		font-size: 16px
@@ -160,6 +168,7 @@
 	padding: 19px 0 18px 21px
 	border: 1px solid #95dbf1
 	outline: none
+	display: block
 
 
 
@@ -233,13 +242,123 @@
 	&__reg
 		max-width: 736px
 	&__body
+		&-title
+			color: $text-color
+			+op-semy
+			font-size: 16px
+			margin-bottom: 18px
+			display: block
 		&-reg 
-			padding: 36px 0 34px 30px
+			padding: 36px 0 0 30px
 			background-color: #fff
+			margin-bottom: 6px
 		&-block
 			display: flex
+			&-social 
+				padding-left: 57px
 	&__input-reg
 		max-width: 331px
 		margin-bottom: 11px
 		&:last-child 
-			margin-bottom: 17px			 	
+			margin-bottom: 17px
+	&__body 
+		&-autor
+			margin-bottom: 25px
+		&-social 
+			&-item 
+				max-width: 212px
+				height: 48px
+				display: flex 
+				align-items: center
+				padding-left: 10px
+				border-radius: 3px
+				margin-bottom: 8px
+				text-decoration: none
+				cursor: pointer
+			&-insta 
+				background-color: #b1388f 
+			&-fb 
+				background-color: #3a579a
+			&-vk 
+				background-color: #4f75a3
+		&-password 
+			margin-top: 23px
+			display: flex 
+			align-items: center 
+		&-label 
+			color: $text-color
+			+op-light
+			font-size: 14px
+			padding-left: 14px
+			padding-right: 76px
+			cursor: pointer
+			display: flex
+			margin-left: 14px
+		&-remember 
+			+op-semy
+			font-size: 14px
+			text-decoration: none
+			color: $main-color	
+	&__button 
+		&-reg 
+			margin: 0 auto
+			display: block
+			margin-bottom: 34px
+	&__button
+		&-autor 
+			color: #ffffff
+			font-size: 16px
+			+op-semy
+			padding: 17px 68px
+			border-radius: 25px
+			display: block
+			margin: 0 auto
+			margin-bottom: 39px
+
+// == стилизуем чекбокс ==
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label
+	position: relative
+
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked)
+	position: absolute
+	left: -9999px
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before
+	content: ''
+	position: absolute
+	width: 19px
+	height: 19px
+	border: 1px solid #95dbf1
+	background-color: #ffffff 
+	left: -14px
+	top: -3px
+	display: block
+	border-radius: 50%
+input[type="checkbox"]:checked + label:after 
+	content: ''
+	position: absolute
+	background: url('../img/modal/check-symbol.svg') no-repeat
+	width: 19px
+	height: 19px
+	left: -10px
+	top: -6px
+	display: block
+
+.social__item-name					
+	color: #ffffff
+	+op-semy
+	font-size: 14px
+	padding-left: 9px
+	position: relative
+	&:before 
+		position: absolute
+		content: ''
+		top : -13px
+		left: 0
+		background-color: #fff
+		width: 1px
+		height: 42px
+		opacity: 0.6
+		
