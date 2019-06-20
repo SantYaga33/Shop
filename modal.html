@@ -10,41 +10,132 @@
 
 <body>
 	
-	<div class="modal modal__cart">
-		<div class="modal__header">
-			<button class="modal__header-button"></button>
-		</div>
-		<div class="modal__body">
-			<div class="modal__body-img">
-				<img src="" alt="">
+	<div class="modal activ">
+		<div class="modal__cart">
+			<div class="modal__header">
+				<span class="modal__header-title">Товар добавлен корзину</span>
+				<button class="modal__header-button">
+					<img src="img/modal/close-X.png" alt="крестик">
+				</button>
 			</div>
-			<div class="modal__body-groop">
-				<span class="modal__body-title"></span>
-				<span class="modal__body-subtitle"></span>
-				<span class="modal__body-title"></span>
-				<span class="modal__body-subtitle"></span>
-				<span class="modal__body-title"></span>
-				<span class="modal__body-subtitle"></span>
-				<span class="modal__body-title"></span>
-				<span class="modal__body-subtitle"></span>
+			<div class="modal__body">
+				<div class="modal__body-img">
+					<img src="img/modal/modal-img.jpg" alt="детская одежда">
+				</div>
+				<div class="modal__body-groop">
+					<div>
+						<span class="modal__body-title">Наименование:</span>
+						<span class="modal__body-subtitle">Куртка для девочки Stars</span>
+					</div>	
+					<div>
+						<span class="modal__body-title">Свойства:</span>
+						<span class="modal__body-subtitle">122, Зеленный</span>
+					</div>
+					<div>
+						<span class="modal__body-title">Кол-во:</span>
+						<span class="modal__body-subtitle">1</span>
+					</div>
+					<div>
+						<span class="modal__body-title">Стоимость:</span>
+						<span class="modal__body-subtitle">894 грн.</span>
+					</div>
+					<button class="modal__body-button">
+						<img src="img/modal/close-circle.png" alt="крестик">
+					</button>
+				</div>
+				<div class="modal__body-summ">
+					<span class="modal__body-incart">товаров в корзине: </span>
+					<span class="modal__body-count">2</span>
+				</div>	
 			</div>
-			<button class="modal__body-button"></button>
-			<span class="modal__body-incart"></span>
-			<span class="modal__body-count"></span>
+			<div class="modal__footer">
+				<span class="modal__footer-text">Итого, к оплате:</span>
+				<span class="modal__footer-cost">894 грн</span>
+			</div>
+			<div class="modal__footer-buttons">
+				<button class="button modal__button-continue">Продолжить покупки</button>
+				<button class="button modal__button-shopping">Оформить заказ</button>
+			</div>
 		</div>
-		<div class="modal__footer">
-			<span class="modal__footer-text"></span>
-			<span class="modal__footer-cost"></span>
-		</div>
-		<div class="modal__footer-buttons">
-			<button class="button modal__button-continue"></button>
-			<button class="button modal__button-shopping"></button>
+	</div>
+
+	<div class="modal">
+		<div class="modal__in">
+			<span class="modal__in-title">Имя пользователя</span>
+			<button class="button modal__button-in">Личный кабинет</button>
+			<button class="button modal__button-out">Выйти</button>
 		</div>
 	</div>
 	
+	<div class="modal">
+		<form action="" class="form form__question" id="question">
+			<div class="form__header">
+				<span class="form__header-title">Задать вопрос</span>
+				<button class="form__header-button">
+					<img src="img/modal/close-X.png" alt="крестик">
+				</button>
+			</div>
+			<div class="form__body">
+				<input type="text" class="input form__question-input" placeholder="Введите Ваш e-mail" required="">
+				<textarea type="text" form="" class="form__question-textarea" placeholder="Введите Ваш вопрос" col="100px" rows="16" required=""></textarea>
+				<button class="button form__button">Отправить</button>
+			</div>
+		</form>
+	</div>
 
+	<div class="modal">
+			<form action="" class="form form__buy" id="question">
+				<div class="form__header">
+					<span class="form__header-title">Купить в 1 клик</span>
+					<button class="form__header-button">
+						<img src="img/modal/close-X.png" alt="крестик">
+					</button>
+				</div>
+				<div class="form__body">
+					<input type="email" class="input form__buy-input-email" placeholder="Введите Ваш e-mail" required="">
+					<input type="tel" class="input form__buy-input-tel" placeholder="Введите Ваш телефон" required="">
+					<button class="button form__button">Отправить</button>
+				</div>
+			</form>
+	</div>
 
-
+	<div class="modal">
+			<form action="" class="form form__reg" id="question">
+				<div class="form__header">
+					<span class="form__header-title">Регистрация</span>
+					<button class="form__header-button">
+						<img src="img/modal/close-X.png" alt="крестик">
+					</button>
+				</div>
+				<div class="form__body form__body-reg">
+					<div class="form__body-block">
+						<div class="form__body-block-input">
+								<input type="text" class="input form__input form__input-reg" placeholder="Имя и фамилия" required="">
+								<input type="email" class="input form__input form__input-reg" placeholder="E-mail" required="">
+								<input type="tel" class="input form__input form__input-reg" placeholder="Tелефон" required="">
+								<input type="password" class="input form__input form__input-reg" placeholder="Пароль" required="">
+								<input type="password" class="input form__input form__input-reg" placeholder="Повторите пароль" required="">
+						</div>
+						<div class="form__body-block-social">
+							<span class="form__body-title">Войти как пользователь</span>
+							<div class="form__body-social-item">
+								<div class="sosial__item-icon"></div>
+								<span class="social__item-name">Instagram</span>
+							</div>
+							<div class="form__body-social-item">
+								<div class="sosial__item-icon"></div>
+								<span class="social__item-name">Facebook</span>
+							</div>
+							<div class="form__body-social-item">
+								<div class="sosial__item-icon"></div>
+								<span class="social__item-name">Вконтакте</span>
+							</div>
+						</div>
+					</div>
+					<button class="button form__button">Регистрация</button>
+				</div>
+			</form>
+	</div>
 
 
 	
