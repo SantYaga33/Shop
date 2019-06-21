@@ -1,15 +1,16 @@
 .modal
-	// position: fixed
-	// left: 0
-	// top: 0
-	// width: 100%
-	// height: 100%
-	// background-color: rgba(#000, 0.5)
-	// display: flex
-	// justify-content: center
-	// align-items: center
-	// transform: scale(1)
-	// transition: all 0.2s ease
+	&__buy,&__cart-in,&__reg,&__question
+		position: fixed
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(#000, 0.5)
+		display: flex
+		justify-content: center
+		align-items: center
+		transform: scale(0)
+		transition: all 0.2s ease
 	&_activ
 		transform: scale(1)
 		transition: all 0.2s ease
@@ -257,7 +258,8 @@
 // == стили для формы регистрация ==
 .form
 	&__reg
-		max-width: 736px
+		width: 736px
+		background-color: #fff
 	&__body
 		&-title
 			color: $text-color

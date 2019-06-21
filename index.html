@@ -26,7 +26,7 @@
 							<a class="header-phone" href="tel:9871880808">(987) 188 08 08</a>
 							<a class="header-phone" href="tel:9683550505">(968) 355 05 05</a>
 						</div>
-						<button class="button button-header">Перезвоните мне</button>
+						<button class="button button-header" id="header__btn">Перезвоните мне</button>
 					</div>
 						<div class="header-logo__wrap">
 							<div class="header-logo">
@@ -35,11 +35,11 @@
 						</div>
 						<div class="header-icons__wrap">
 							<div class="header-icons">
-								<a href="#" class="header-icons__item">
+								<a href="#" id="header__in" class="header-icons__item">
 									<div class="header-icons__item-img">
 										<img src="img/header/icon-dress.svg" alt="иконка">
 									</div>
-									<span class="header-icons__item-text">Вход</span>
+									<span class="header-icons__item-text" >Вход</span>
 								</a>
 								<a href="#" class="header-icons__item">
 									<div class="header-icons__item-img">
@@ -47,7 +47,7 @@
 									</div>
 									<span class="header-icons__item-text">Избранное</span>
 								</a>
-								<a href="#" class="header-icons__item">
+								<a href="#" class="header-icons__item" id="header__cart">
 									<div class="header-icons__item-img">
 										<img src="img/header/shopping-cart.svg" alt="иконка">
 									</div>
@@ -775,7 +775,7 @@
 				<div class="footer__block-item footer__block-item1">
 					<div class="footer__title">Свяжитесь с нами</div>
 					<a href="tel:+79871880808" class="footer__link-call">+7 987 188 08 08</a>
-					<button class="button footer__button">Перезвоните&nbsp;мне</button>
+					<button class="button footer__button" id="footer__button">Перезвоните&nbsp;мне</button>
 					<a href="#" class="footer__link_big">Блог</a>
 					<a href="#" class="footer__link_big">Новости блога</a>
 					<a href="#" class="footer__link_big">Отзывы</a>
@@ -887,7 +887,179 @@
 		</div>
 	</footer>
 
-	<!-- == кнопка на вверх == -->
+<!-- == мод окно регистрация == -->
+	<div class="modal modal__reg">
+			<form action="#" class="form form__reg" id="reg">
+				<div class="form__header">
+					<span class="form__header-title">Регистрация</span>
+					<button class="form__header-button">
+						<img src="img/modal/close-X.png" alt="крестик">
+					</button>
+				</div>
+				<div class="form__body-reg">
+					<div class="form__body-block">
+						<div class="form__body-block-input">
+								<input type="text" class="input form__input form__input-reg" placeholder="Имя и фамилия" required>
+								<input type="email" class="input form__input form__input-reg" placeholder="E-mail" required>
+								<input type="tel" class="input form__input form__input-reg" placeholder="Tелефон" required="">
+								<input type="password" class="input form__input form__input-reg" placeholder="Пароль" required>
+								<input type="password" class="input form__input form__input-reg" placeholder="Повторите пароль" required>
+						</div>
+						<div class="form__body-block-social">
+							<span class="form__body-title">Войти как пользователь</span>
+							<a href="#" class="form__body-social-item form__body-social-insta">
+								<div class="form__body-social-itemall ">
+									<?xml version="1.0" encoding="iso-8859-1"?>
+									<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+									<svg class="thing__social-icon-instsvg" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="19px" height="19px" viewBox="0 0 169.063 169.063" 
+										 xml:space="preserve">
+									<g>
+										<path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+											c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+											c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+											c17.455,0,31.656,14.201,31.656,31.655V122.407z"/>
+										<path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+											C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+											c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"/>
+										<path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+											c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+											C135.661,29.421,132.821,28.251,129.921,28.251z"/>
+									</g>
+									</svg>
+								</div>
+								<span class="social__item-name">Instagram</span>
+							</a>
+							<a href="#" class="form__body-social-item form__body-social-facebook">
+							<div class="form__body-social-itemall">
+								<?xml version="1.0" encoding="iso-8859-1"?>
+								<svg class="thing__social-icon-fsvg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 viewBox="0 0 310 310" width="19px" height="19px" style="enable-background:new 0 0 310 310;" xml:space="preserve">
+								<g>
+									<path  d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+										c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+										V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+										C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+										c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/>
+								</g>
+								</svg>
+							</div>
+							
+								<span class="social__item-name">Facebook</span>
+							</a>
+							<a href="#" class="form__body-social-item form__body-social-vkvk">
+								<div class="form__body-social-itemall">
+									<?xml version="1.0" encoding="iso-8859-1"?>
+									<svg class="thing__social-icon-vksvg" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px"
+										 viewBox="0 0 304.36 304.36" style="enable-background:new 0 0 304.36 304.36;" xml:space="preserve">
+									<g id="XMLID_1_">
+										<path  d="M261.945,175.576c10.096,9.857,20.752,19.131,29.807,29.982
+											c4,4.822,7.787,9.798,10.684,15.394c4.105,7.955,0.387,16.709-6.746,17.184l-44.34-0.02c-11.436,0.949-20.559-3.655-28.23-11.474
+											c-6.139-6.253-11.824-12.908-17.727-19.372c-2.42-2.642-4.953-5.128-7.979-7.093c-6.053-3.929-11.307-2.726-14.766,3.587
+											c-3.523,6.421-4.322,13.531-4.668,20.687c-0.475,10.441-3.631,13.186-14.119,13.664c-22.414,1.057-43.686-2.334-63.447-13.641
+											c-17.422-9.968-30.932-24.04-42.691-39.971C34.828,153.482,17.295,119.395,1.537,84.353C-2.01,76.458,0.584,72.22,9.295,72.07
+											c14.465-0.281,28.928-0.261,43.41-0.02c5.879,0.086,9.771,3.458,12.041,9.012c7.826,19.243,17.402,37.551,29.422,54.521
+											c3.201,4.518,6.465,9.036,11.113,12.216c5.142,3.521,9.057,2.354,11.476-3.374c1.535-3.632,2.207-7.544,2.553-11.434
+											c1.146-13.383,1.297-26.743-0.713-40.079c-1.234-8.323-5.922-13.711-14.227-15.286c-4.238-0.803-3.607-2.38-1.555-4.799
+											c3.564-4.172,6.916-6.769,13.598-6.769h50.111c7.889,1.557,9.641,5.101,10.721,13.039l0.043,55.663
+											c-0.086,3.073,1.535,12.192,7.07,14.226c4.43,1.448,7.35-2.096,10.008-4.905c11.998-12.734,20.561-27.783,28.211-43.366
+											c3.395-6.852,6.314-13.968,9.143-21.078c2.096-5.276,5.385-7.872,11.328-7.757l48.229,0.043c1.43,0,2.877,0.021,4.262,0.258
+											c8.127,1.385,10.354,4.881,7.844,12.817c-3.955,12.451-11.65,22.827-19.174,33.251c-8.043,11.129-16.645,21.877-24.621,33.072
+											C252.26,161.544,252.842,166.697,261.945,175.576L261.945,175.576z M261.945,175.576"/>
+									</g>
+									</svg>
+								</div>
+								<span class="social__item-name">Вконтакте</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<button class="button button__main  form__button form__button-reg">Регистрация</button>
+			</form>
+	</div>
+
+<!-- == мод окно товары в корзине == -->
+<div class="modal modal__cart-in">
+		<div class="modal__cart">
+			<div class="modal__header">
+				<span class="modal__header-title">Товар добавлен в корзину</span>
+				<button class="modal__header-button">
+					<img src="img/modal/close-X.png" alt="крестик">
+				</button>
+			</div>
+			<div class="modal__body">
+				<div class="modal__body-img">
+					<img src="img/modal/modal-img.jpg" alt="детская одежда">
+				</div>
+				<div class="modal__body-groop">
+					<div>
+						<span class="modal__body-title modal__body-title1">Наименование:</span>
+						<span class="modal__body-subtitle modal__body-subtitle_fixwide">Куртка для девочки Stars</span>
+					</div>	
+					<div>
+						<span class="modal__body-title modal__body-title2">Свойства:</span>
+						<span class="modal__body-subtitle">122, Зеленный</span>
+					</div>
+					<div>
+						<span class="modal__body-title modal__body-title3">Кол-во:</span>
+						<span class="modal__body-subtitle modal__body-subtitle_fixwide1">1</span>
+					</div>
+					<div>
+						<span class="modal__body-title modal__body-title4">Стоимость:</span>
+						<span class="modal__body-subtitle">894 грн.</span>
+					</div>
+					<button class="modal__body-button">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<svg version="1.1" class="close-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 475.2 475.2" style="enable-background:new 0 0 475.2 475.2;" xml:space="preserve">
+						<g>
+							<g>
+								<path d="M405.6,69.6C360.7,24.7,301.1,0,237.6,0s-123.1,24.7-168,69.6S0,174.1,0,237.6s24.7,123.1,69.6,168s104.5,69.6,168,69.6
+									s123.1-24.7,168-69.6s69.6-104.5,69.6-168S450.5,114.5,405.6,69.6z M386.5,386.5c-39.8,39.8-92.7,61.7-148.9,61.7
+									s-109.1-21.9-148.9-61.7c-82.1-82.1-82.1-215.7,0-297.8C128.5,48.9,181.4,27,237.6,27s109.1,21.9,148.9,61.7
+									C468.6,170.8,468.6,304.4,386.5,386.5z"/>
+								<path d="M342.3,132.9c-5.3-5.3-13.8-5.3-19.1,0l-85.6,85.6L152,132.9c-5.3-5.3-13.8-5.3-19.1,0c-5.3,5.3-5.3,13.8,0,19.1
+									l85.6,85.6l-85.6,85.6c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l85.6-85.6l85.6,85.6c2.6,2.6,6.1,4,9.5,4
+									c3.5,0,6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1l-85.4-85.6l85.6-85.6C347.6,146.7,347.6,138.2,342.3,132.9z"/>
+							</g>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__body-summ">
+					<span class="modal__body-incart">товаров в корзине: </span>
+					<span class="modal__body-count">2</span>
+				</div>	
+			</div>
+			<div class="modal__footer">
+				<span class="modal__footer-text">Итого, к оплате:</span>
+				<span class="modal__footer-cost">894 грн</span>
+			</div>
+			<div class="modal__footer-buttons">
+				<button class="button button__second  modal__button-continue">Продолжить покупки</button>
+				<button class="button button__main modal__button-shopping">Оформить заказ</button>
+			</div>
+		</div>
+	</div>
+
+
+<!-- == мод окно "перезвоните мне" == -->
+	<div class="modal modal__question">
+		<form action="#" class="form form__question" id="question">
+			<div class="form__header">
+				<span class="form__header-title">Задать вопрос</span>
+				<button class="form__header-button" id="question__close">
+					<img src="img/modal/close-X.png" alt="крестик">
+				</button>
+			</div>
+			<div class="form__body">
+				<input type="text" class="input form__question-input" placeholder="Введите Ваш e-mail" required>
+				<textarea name="textarea" form="question" class="form__question-textarea" placeholder="Введите Ваш вопрос" col="100px" rows="16" required></textarea>
+				<button class="button button__main  form__button">Отправить</button>
+			</div>
+		</form>
+	</div>
+
+<!-- == кнопка на вверх == -->
 	<div class="arrowup">
 		<svg  xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12"><g><g><path class="arrowup" fill="#fff" d="M.197 9.889L9.389.697a.998.998 0 0 1 .793-.29.983.983 0 0 1 1.494-.122l9.038 9.039a.983.983 0 0 1-1.39 1.39l-8.562-8.562-9.151 9.151A1 1 0 1 1 .197 9.89z"/></g></g></svg>
 	</div>

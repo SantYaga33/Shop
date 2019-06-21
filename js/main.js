@@ -10,40 +10,6 @@ arrowupEl.click(function() {
  });
 
 
-// == слайдер ==
-// $('.thing__slide').slick({
-// 	slidesToShow: 6,
-// 	slidesToScroll: 2,
-// 	infinite: true,
-// 	// autoplay: true,
-// 	prevArrow: $('.slide__left-arrow'),
-// 	nextArrow: $('.slide__rigth-arrow'),
-// 	 responsive: [
-//   {
-//     breakpoint: 1201,
-//     settings: {
-//       slidesToShow: 6,
-//       slidesToScroll: 2,
-//       infinite: true,
-//     }
-//   },
-//   {
-//     breakpoint: 1000,
-//     settings: {
-//       slidesToShow: 1,
-//       slidesToScroll: 1
-//     }
-//   },
-//   {
-//     breakpoint: 320,
-//     settings: {
-//       slidesToShow: 1,
-//       slidesToScroll: 1
-//   }
-//   },
-// ]
-
-
 
 // == двойной слайдер ==
 
@@ -66,12 +32,53 @@ $('.thing__slide').slick({
   focusOnSelect: true,
   centerPadding: '50px'
 
-
-
-
 });
 
+// == мод окно задать вопрос ==
+let buttonHeaderEL        = $('#header__btn'),
+    buttonFooterEL        = $('#footer__button'),
+    buttonHeaderInEL      = $('#header__in'),
+    buttonHeaderCartEL    = $('#header__cart'),
+    buttonThingBuyEL      = $('#thing__button'),
+    modalEL               = $('.modal__question'),
+    modalBuyEL            = $('.modal__buy'),
+    modalRegEL            = $('.modal__reg'),
+    modalCartEL           = $('.modal__cart-in'),
+    modalHeaderCloseEL    = $('.modal__header-button'),
+    buttonCloselEL        = $('.form__header-button')
 
+
+buttonThingBuyEL.on('click', function() {
+  modalBuyEL.addClass('modal_activ');
+}); 
+
+buttonHeaderCartEL.on('click', function() {
+  modalCartEL.addClass('modal_activ');
+}); 
+
+buttonHeaderInEL.on('click', function() {
+  modalRegEL.addClass('modal_activ');
+}); 
+
+buttonHeaderEL.on('click', function() {
+  modalEL.addClass('modal_activ');
+});  
+
+buttonFooterEL.on('click', function() {
+  modalEL.addClass('modal_activ');
+});  
+
+modalHeaderCloseEL.on('click', function() {
+  modalCartEL.removeClass('modal_activ');
+}); 
+
+buttonCloselEL.on('click', function() {
+  modalEL.removeClass('modal_activ');
+});
+ 
+buttonCloselEL.on('click', function() {
+  modalBuyEL.removeClass('modal_activ');
+}); 
 
 
 
