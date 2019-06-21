@@ -292,8 +292,56 @@
 				margin-bottom: 8px
 				text-decoration: none
 				cursor: pointer
+			&-itemall  
+				width: 42px
+				height: 42px
+				display: flex
+				align-items: center
+				justify-content: center
+				text-decoration: none
+				margin-right: 9px
 			&-insta 
-				background-color: #b1388f 
+				background-color: #b1388f
+				border: 1px solid #b1388f
+				transition: all 0.4s ease
+				&:hover 
+					background-color: #fff
+					transition: all 0.4s ease
+					.thing__social-icon-instsvg 
+						fill: #b1388f
+					.social__item-name 
+						color: #b1388f	
+						&:before 
+							content: ''
+							background-color: #b1388f	 
+			&-facebook
+				background-color: #3a579a
+				border: 1px solid #3a579a
+				transition: all 0.4s ease
+				&:hover 
+					background-color: #fff
+					transition: all 0.4s ease
+					.thing__social-icon-fsvg 
+						fill: #3a579a
+					.social__item-name 
+						color: #3a579a	
+						&:before 
+							content: ''
+							background-color: #3a579a 	
+			&-vkvk
+				background-color: #4f75a3
+				border: 1px solid #4f75a3
+				transition: all 0.4s ease
+				&:hover 
+					background-color: #fff
+					transition: all 0.4s ease
+					.thing__social-icon-vksvg 
+						fill: #4f75a3
+					.social__item-name 
+						color: #4f75a3	
+						&:before 
+							content: ''
+							background-color: #4f75a3						
 			&-fb 
 				background-color: #3a579a
 			&-vk 
