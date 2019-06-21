@@ -2169,12 +2169,14 @@ input[type="checkbox"]:checked + label:after {
   min-width: 263px;
   top: 50px;
   cursor: pointer;
+  display: none;
   opacity: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: 100;
 }
 .select__select li:hover > ul {
+  display: block;
   opacity: 1;
   background-color: #e0f7fa;
   -webkit-transition: all 0.3s ease;
