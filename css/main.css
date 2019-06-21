@@ -127,29 +127,24 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
 }
 .card:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 0 13px rgba(0, 0, 0, 0.12);
-  z-index: 1000;
+  -webkit-box-shadow: 0 0 13px #e0e0e0;
+          box-shadow: 0 0 13px #e0e0e0;
 }
-.card:hover .card__select-mini {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.card:hover .card__extra-info1 {
+  display: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.card:hover .mini__buy {
+.card:hover .card__extra-info2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 261px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -210,7 +205,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card__select-mini {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -314,8 +311,54 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
-.mini__buy {
+.card__extra-info1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card__extra-info2 {
+  width: 261px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: none;
+  border-top: none;
+  padding: 0 16px 22px 17px;
+  -webkit-box-shadow: 0 4px 5px 1px #e0e0e0;
+          box-shadow: 0 4px 5px 1px #e0e0e0;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: -124px;
+  z-index: 1000;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.mini__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.mini__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
