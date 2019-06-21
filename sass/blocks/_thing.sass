@@ -4,16 +4,25 @@
 	&__wrap 
 		display: flex
 		margin-bottom: 18px
-		&-imgblock
-			margin-bottom: -21px
-	&__img-block 
-		display: flex 
-		justify-content: center 
-		align-items: center
-		border: 1px solid #e8e8e8
-		margin-bottom: 18px
-	&__img 
-		padding: 50px 63px 60px 52px
+		&-slids 
+			max-width: 654px
+		&-slide-main 
+			padding: 50px 63px 60px 52px
+			border: 1px solid #e8e8e8
+			margin-bottom: 18px
+	&__slide 
+		margin-bottom: 47px
+		&-img 
+			width: 98px
+			height: 109px
+			display: flex
+			justify-content: center
+			align-items: center
+			border: 1px solid #e8e8e8
+			margin-right: 4px	
+			&:focus
+				border: 1px solid #393939
+				outline: none
 	&__info-block
 		padding-top: 18px
 		padding-left: 56px
@@ -128,17 +137,6 @@
 				fill: #fff
 			&-fsvg 
 				fill: #fff
-	&__slide 
-		margin-bottom: 67px
-		&-img 
-			width: 98px
-			height: 109px
-			display: flex
-			justify-content: center
-			align-items: center
-			border: 1px solid #e8e8e8
-			margin-right: 4px
-
 	&__select 
 		list-style: none
 		margin-bottom: 20px

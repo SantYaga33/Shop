@@ -104,7 +104,16 @@ h1, h2, h3, h4, h5, h6
 	justify-content: center		
 	position: relative 
 	&:hover
+		transition: all .3s ease
 		box-shadow: 0 0 13px rgba(0, 0, 0, 0.12)
+		z-index: 1000
+		.card__select-mini
+			display: flex
+			transition: all .3s ease
+		.mini__buy
+			display: flex
+			transition: all .3s ease
+
 	&__img 
 		margin-bottom: 25px
 		min-height: 240px
@@ -141,8 +150,9 @@ h1, h2, h3, h4, h5, h6
 // == стили для всплывающих списков в карточке ==
 
 .card__select-mini
-	display: flex
+	display: none
 	justify-content: space-between
+	transition: all .3s ease
 .mini__select
 		list-style: none
 		margin-bottom: 20px
@@ -200,10 +210,12 @@ h1, h2, h3, h4, h5, h6
 			top: 40px
 			cursor: pointer
 			opacity: 0
+			display: none
 			transition: all .3s ease
 			z-index: 100
 		li:hover > ul
 			opacity: 1
+			display: block
 			background-color: #e0f7fa 
 			transition: all .3s ease	
 		li ul a 
@@ -212,23 +224,30 @@ h1, h2, h3, h4, h5, h6
 
 
 .mini__buy 
-	display: flex
+	display: none
 	width: 100%
 	align-items: center
 	margin-top: 11px
+	transition: all .3s ease
 	&-icon 
 		width: 17px
 		height: 16px
 		margin-right: 7px
+		text-decoration: none
+		cursor: pointer
 	&-cart 
 		color: #2d2d2d
 		+op-light
 		font-size: 13px
 		margin-right: 22px
+		text-decoration: none
+		cursor: pointer
 	&-click			
 		color: $main-color
 		+op-semy
 		font-size: 13px
+		text-decoration: none
+		cursor: pointer
 
 // == стили под ховер svg корзинки ==
 .card__cart-svg 
