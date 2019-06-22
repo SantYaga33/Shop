@@ -862,6 +862,22 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 470px;
 }
 
+@media (max-width: 575px) {
+  .header__wrap {
+    padding: 21px 23 23px 15px;
+  }
+  .header__contacts {
+    display: none;
+  }
+  .header__logo {
+    width: 108px;
+    height: 36px;
+  }
+
+  .hover {
+    display: none;
+  }
+}
 .main {
   padding: 19px 0 0 0;
 }
