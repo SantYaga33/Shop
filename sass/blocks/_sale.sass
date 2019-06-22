@@ -3,6 +3,7 @@
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
+		flex-wrap: wrap
 	&__title 
 		margin-bottom: 23px
 		&__block 
@@ -12,3 +13,58 @@
 	&__label
 		top: 65px
 		left: 19px
+
+
+@media (max-width: 575px)
+	.sale 
+		padding-top: 21px
+		padding-bottom: 31px
+		&__title 
+			color: $text-color
+			+op-semy
+			font-size: 22px
+			margin-bottom: 20px 
+			&:after 
+				content: ''
+				margin-top: 14px
+		&__slide-mobile
+			width: 263px
+			display: flex 
+			justify-content: center 
+			align-items: center 
+		&__slide-wrap 
+			display: flex 
+			justify-content: center 
+			width: 100%
+			position: relative
+		&__slide-arrowL 
+			position: absolute
+			top: 169px
+			left: -50px
+			display: flex
+			justify-content: center 
+			align-items: center 
+			width: 48px
+			height: 48px
+			background-color: $main-color
+			opacity: 0.6	
+			border-radius: 50%
+		&__slide-arrowR 
+			position: absolute
+			top: 168px
+			left: 193px
+			display: flex
+			justify-content: center 
+			align-items: center 
+			width: 48px
+			height: 48px
+			background-color: $main-color
+			opacity: 0.6
+			border-radius: 50%	
+
+	.card		
+		&__sale 
+			height: 386px
+			border: 1px solid #e8e8e8
+		&__article
+			margin-bottom: 17px

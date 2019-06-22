@@ -65,4 +65,48 @@
 				margin-right: 0
 
 
-
+@media (max-width: 575px) 
+	.news 
+		padding: 0
+		&__wrap 
+			padding-top: 36px
+			padding-bottom: 39px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+		&__title 
+			width: 256px
+			color: $text-color
+			font-size: 16px
+			+op-semy
+			line-height: 21px
+			text-transform: uppercase
+			margin-bottom: 15px
+		&__subtitle 
+			width: 202px
+			color: $text-color
+			+op-reg
+			font-size: 14px
+			line-height: 18px
+			text-transform: uppercase
+			margin-bottom: 21px
+		&__form-input
+			width: 265px
+			color: #999999
+			+op-light
+			font-size: 13px
+			padding: 14px 74px 14px 73px
+			background-color: #fff
+			margin-bottom: 9px
+		&__form 
+			display: flex
+			flex-direction: column
+			align-items: center
+		&__button 	
+			color: #ffffff
+			+rb-reg
+			font-size: 13px
+			font-weight: 500
+			padding: 12px 28px 12px 28px
+			margin-bottom: 25px

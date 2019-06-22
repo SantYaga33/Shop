@@ -34,6 +34,29 @@ $('.thing__slide').slick({
 
 });
 
+// == слайдер 1 для моб версии ==
+$('.sale__slide-mobile').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  fade: true,
+  prevArrow: $('.sale__slide-arrowL'),
+  nextArrow: $('.sale__slide-arrowR'),
+
+});
+
+// == слайдер 2 для моб версии ==
+$('.new__slide-mobile').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  fade: true,
+  prevArrow: $('.new__slide-arrowL'),
+  nextArrow: $('.new__slide-arrowR'),
+
+});
+
+
 // == мод окно задать вопрос ==
 let buttonHeaderEL        = $('#header__btn'),
     buttonFooterEL        = $('#footer__button'),
