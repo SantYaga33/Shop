@@ -168,11 +168,57 @@
   
 
 @media (max-width: 575px)
-	   
-
-  
-
-
-  
-  
+	.footer
+		padding-top: 4px
+		&__title-fix 
+			display: block
+			width: 100%
+			padding-left: 80px
+		&__link 
+			&:last-child 
+				margin-bottom: 0
+		&__block
+			align-items: center 
+			margin-bottom: 36px	
+			&-icons
+				display: flex
+				padding-left: 81px	
+			&-item  
+				margin: 0
+				flex-direction: column	
+				display: flex	
+				align-items: center
+				&_fix 
+					flex-direction: row
+					flex-wrap: wrap	
+		&__link_blog 
+			display: none
+		&__link_fix 
+			margin-bottom: 6px				
+		&__link_big 
+			margin-bottom: 15px
+			&:last-child 
+				margin-bottom: 0
+		&__icon		
+			&:last-child
+				margin-right: 0
+		&__logo-delivery 
+			margin-bottom: 5px
+		&__copyright
+			width: 255px
+			padding-top: 19px
+			padding-left: 62px
+			text-align: center
+			&-text
+				width: 190px
+				height: 30px
+				opacity: 0.6
+				color: $text-color 
+				+op-light
+				font-size: 13px
+				line-height: 17px
+		&__copyright-img
+			width: 12px
+			height: 12px
+			margin-right: 2px	  
   
