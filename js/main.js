@@ -35,6 +35,21 @@ $('.thing__slide').slick({
 });
 
 // == слайдер 1 для моб версии ==
+// window.addEventListener("resize", function() {
+//   if (window.innerWidth >= 600) {
+//     $('.sale__slide-mobile').slick('unslick');
+//     sliderIsLive = false;
+//   }
+//   else {
+//     if (sliderIsLive) {
+//       $('.sale__slide-mobile').slick();
+//       sliderIsLive = true;
+//     }
+//   }
+// });
+
+
+
 $('.sale__slide-mobile').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -42,17 +57,40 @@ $('.sale__slide-mobile').slick({
   fade: true,
   prevArrow: $('.sale__slide-arrowL'),
   nextArrow: $('.sale__slide-arrowR'),
+  //   responsive: [
+  
+  //   {
+  //     breakpoint: 600,
+  //     settings: "unslick"
+  //   },
+   
+  // ]
 
 });
 
 // == слайдер 2 для моб версии ==
+// window.addEventListener("resize", function() {
+//   if (window.innerWidth >= 600) {
+//     $('.new__slide-mobile').slick('unslick');
+//     sliderIsLive = false;
+//   }
+//   else {
+//     if (sliderIsLive) {
+//       $('.new__slide-mobile').slick();
+//       sliderIsLive = true;
+//     }
+//   }
+// });
+
+
+
 $('.new__slide-mobile').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   infinite: true,
   fade: true,
   prevArrow: $('.new__slide-arrowL'),
-  nextArrow: $('.new__slide-arrowR'),
+  nextArrow: $('.new__slide-arrowR')
 
 });
 

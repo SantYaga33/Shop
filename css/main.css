@@ -1385,6 +1385,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 575px) {
+  .new {
+    padding-top: 36px;
+    padding-bottom: 11px;
+  }
   .new__title {
     color: #393939;
     font-family: "OpenSans-Semibold", sans-serif;
@@ -1455,6 +1459,13 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #00b5ee;
     opacity: 0.6;
     border-radius: 50%;
+  }
+
+  .card__img {
+    margin-bottom: 23px;
+  }
+  .card__article {
+    margin-bottom: 19px;
   }
 }
 .about {
@@ -1532,6 +1543,47 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 40px;
 }
 
+@media (max-width: 575px) {
+  .about {
+    padding-top: 22px;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+  }
+  .about__item1 {
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+  .about__item2 {
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+  .about__item3 {
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+  .about__item4 {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .about__item-icon1 {
+    margin-right: 14px;
+  }
+  .about__item-icon2 {
+    margin-right: 14px;
+  }
+  .about__item-icon3 {
+    margin-right: 15px;
+  }
+  .about__item-icon4 {
+    margin-right: 15px;
+  }
+  .about__item-icon5 {
+    margin-right: 14px;
+  }
+  .about__item-text {
+    max-width: 220px;
+  }
+}
 .footer {
   border-top: 1px solid #a7e3f7;
   background: #e5f7fd;
