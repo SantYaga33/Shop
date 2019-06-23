@@ -1607,10 +1607,6 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 .footer__block-icons {
   display: -webkit-box;
@@ -1852,6 +1848,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
   }
   .footer__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2527,6 +2527,95 @@ input[type="checkbox"]:checked + label:after {
   opacity: 0.6;
 }
 
+@media (max-width: 575px) {
+  .modal__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 290px;
+  }
+  .modal__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal__body-groop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal__footer-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+@media (max-width: 575px) {
+  .modal__cart {
+    background-color: #fff;
+    max-width: 290px;
+  }
+  .modal__header {
+    margin-bottom: 18px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 22px 17px 19px 20px;
+  }
+  .modal__body-img {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .form__reg {
+    max-width: 290px;
+  }
+  .form__body-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form__body-reg {
+    padding: 0;
+  }
+  .form__input-reg {
+    max-width: 251px;
+    max-height: 51px;
+  }
+}
+@media (max-width: 575px) {
+  .form__question {
+    max-width: 290px;
+  }
+  .form__question-input {
+    max-width: 251px;
+    max-height: 51px;
+  }
+  .form__question-textarea {
+    max-width: 251px;
+    max-height: 51px;
+  }
+}
+@media (max-width: 575px) {
+  .form__buy {
+    max-width: 290px;
+  }
+}
 .select {
   padding-top: 19px;
   padding-bottom: 50px;
@@ -2723,6 +2812,66 @@ input[type="checkbox"]:checked + label:after {
   font-size: 14px;
 }
 
+@media (max-width: 575px) {
+  .select {
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 49px;
+  }
+  .select__groop-wrap {
+    display: none;
+  }
+  .select__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .select__title {
+    width: 239px;
+    color: #393939;
+    font-family: "OpenSans-Semibold", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+  .select__title:after {
+    margin-top: 13px;
+  }
+  .select__select {
+    margin-bottom: 5px;
+  }
+  .select__select:last-child {
+    margin-bottom: 16px;
+  }
+  .select__select li {
+    width: 290px;
+    height: 46px;
+  }
+  .select__block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .new__card {
+    margin-bottom: 22px;
+    height: 386px;
+  }
+  .new__card:last-child {
+    margin-bottom: 13px;
+  }
+
+  .card__cost {
+    font-family: "RobotoCondensed-Bold", sans-serif;
+    font-weight: 700;
+  }
+
+  .thing__select-arrow {
+    top: 20px;
+  }
+}
 .thing {
   padding-top: 18px;
   padding-bottom: 63px;

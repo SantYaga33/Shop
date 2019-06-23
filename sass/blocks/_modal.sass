@@ -434,3 +434,65 @@ input[type="checkbox"]:checked + label:after
 		height: 42px
 		opacity: 0.6
 		
+
+// ==  мод окно товар в корзине == 
+@media (max-width: 575px) 
+	.modal
+		&__card
+			display: flex
+			flex-direction: column
+			max-width: 290px
+		&__body 
+			display: flex 
+			flex-direction: column 
+			&-groop 
+				display: flex 
+				flex-direction: column 
+		&__footer-buttons
+			flex-direction: column-reverse 
+
+
+// ==  мод окно регистрация == 
+@media (max-width: 575px) 
+	.modal 
+		&__cart
+			background-color: #fff
+			max-width: 290px
+		&__header
+			margin-bottom: 18px
+			align-items: center
+			&-title
+			padding: 22px 17px 19px 20px
+		&__body-img
+			margin: 0 auto
+			margin-bottom: 30px
+	.form
+		&__reg
+			max-width: 290px
+		&__body-block
+			flex-wrap: wrap 
+			justify-content: center
+		&__body-reg	
+			padding: 0
+		&__input-reg
+			max-width: 251px
+			max-height: 51px
+
+
+// ==  мод окно задать вопрос == 
+@media (max-width: 575px) 					
+	.form
+		&__question
+			max-width: 290px
+			&-input	
+				max-width: 251px
+				max-height: 51px
+		&__question-textarea
+			max-width: 251px
+			max-height: 51px
+
+// ==  мод окно купить в 1 клик== 
+@media (max-width: 575px) 								
+	.form
+		&__buy
+			max-width: 290px

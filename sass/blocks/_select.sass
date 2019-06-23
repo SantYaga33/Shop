@@ -134,3 +134,44 @@
 		+op-light
 		font-size: 14px
 
+
+@media (max-width: 575px) 
+	.select
+		padding: 0
+		padding-top: 20px
+		padding-bottom: 49px
+		&__groop
+			&-wrap 
+				display: none
+		&__wrap 
+			flex-direction: column 
+		&__title 
+			width: 239px
+			color: $text-color
+			+op-semy
+			font-size: 20px
+			line-height: 26px	
+			margin-bottom: 16px
+			&:after 
+				margin-top: 13px
+		&__select 
+			margin-bottom: 5px
+			&:last-child
+				margin-bottom: 16px 
+		&__select li
+			width: 290px
+			height: 46px
+		&__block
+			justify-content: center 
+
+
+	.new__card
+		margin-bottom: 22px
+		height: 386px
+		&:last-child
+			margin-bottom: 13px
+	.card__cost 
+		+rb-bold 
+
+	.thing__select-arrow
+		top: 20px
