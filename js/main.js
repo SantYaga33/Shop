@@ -34,21 +34,7 @@ $('.thing__slide').slick({
 
 });
 
-// == слайдер 1 для моб версии ==
-// window.addEventListener("resize", function() {
-//   if (window.innerWidth >= 600) {
-//     $('.sale__slide-mobile').slick('unslick');
-//     sliderIsLive = false;
-//   }
-//   else {
-//     if (sliderIsLive) {
-//       $('.sale__slide-mobile').slick();
-//       sliderIsLive = true;
-//     }
-//   }
-// });
-
-
+// == слайдер  для моб версии ==
 
 $('.sale__slide-mobile').slick({
   slidesToShow: 1,
@@ -57,30 +43,8 @@ $('.sale__slide-mobile').slick({
   fade: true,
   prevArrow: $('.sale__slide-arrowL'),
   nextArrow: $('.sale__slide-arrowR'),
-  //   responsive: [
-  
-  //   {
-  //     breakpoint: 600,
-  //     settings: "unslick"
-  //   },
-   
-  // ]
 
 });
-
-// == слайдер 2 для моб версии ==
-// window.addEventListener("resize", function() {
-//   if (window.innerWidth >= 600) {
-//     $('.new__slide-mobile').slick('unslick');
-//     sliderIsLive = false;
-//   }
-//   else {
-//     if (sliderIsLive) {
-//       $('.new__slide-mobile').slick();
-//       sliderIsLive = true;
-//     }
-//   }
-// });
 
 
 
@@ -95,15 +59,20 @@ $('.new__slide-mobile').slick({
 });
 
 
-// == мод окно задать вопрос ==
+// == мод окно  ==
 let buttonHeaderEL        = $('#header__btn'),
     buttonFooterEL        = $('#footer__button'),
     buttonHeaderInEL      = $('#header__in'),
     buttonHeaderCartEL    = $('#header__cart'),
+    buttonCartInEL        = $('.card__cart'),
+    buttonShopEL          = $('.modal__button-continue'),
+    buttonShopBuyEL       = $('.modal__button-shopping'),
     buttonThingBuyEL      = $('#thing__button'),
+    buttonClickBuyEL      = $('.mini__buy-click'),
     modalEL               = $('.modal__question'),
     modalBuyEL            = $('.modal__buy'),
     modalRegEL            = $('.modal__reg'),
+    modalAutorEL          = $('.modal__autor'),
     modalCartEL           = $('.modal__cart-in'),
     modalHeaderCloseEL    = $('.modal__header-button'),
     buttonCloselEL        = $('.form__header-button')
@@ -113,9 +82,17 @@ buttonThingBuyEL.on('click', function() {
   modalBuyEL.addClass('modal_activ');
 }); 
 
-buttonHeaderCartEL.on('click', function() {
+buttonClickBuyEL.on('click', function() {
+  modalBuyEL.addClass('modal_activ');
+});
+
+buttonCartInEL.on('click', function() {
   modalCartEL.addClass('modal_activ');
 }); 
+
+buttonHeaderCartEL.on('click', function() {
+  modalCartEL.addClass('modal_activ');
+});
 
 buttonHeaderInEL.on('click', function() {
   modalRegEL.addClass('modal_activ');
@@ -133,12 +110,32 @@ modalHeaderCloseEL.on('click', function() {
   modalCartEL.removeClass('modal_activ');
 }); 
 
+buttonShopEL.on('click', function() {
+  modalCartEL.removeClass('modal_activ');
+});
+
+buttonShopBuyEL.on('click', function() {
+  modalCartEL.removeClass('modal_activ');
+  modalAutorEL.addClass('modal_activ');
+
+});
+
 buttonCloselEL.on('click', function() {
   modalEL.removeClass('modal_activ');
 });
  
 buttonCloselEL.on('click', function() {
   modalBuyEL.removeClass('modal_activ');
+}); 
+
+
+buttonCloselEL.on('click', function() {
+  modalRegEL.removeClass('modal_activ');
+}); 
+
+
+buttonCloselEL.on('click', function() {
+  modalAutorEL.removeClass('modal_activ');
 }); 
 
 

@@ -11,6 +11,7 @@
 	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Надежда</title>
 </head>
@@ -1174,7 +1175,7 @@
 					<div class="card__extra-info2">
 						<div class="card__select-mini">
 							<ul class="mini__select mini__select-size">
-								<li>
+								<li class="activ-li">
 									<span class="mini__select-subsize">XXL</span>
 									<div class="mini__select-arrow">
 										<img src="img/thing/arrow-down.png" alt="стрелка">
@@ -2918,6 +2919,24 @@
 			</div>
 		</form>
 	</div>
+
+<!-- == мод окно купить в 1 клик == -->
+<div class="modal modal__buy">
+			<form action="#" class="form form__buy" id="click">
+				<div class="form__header">
+					<span class="form__header-title">Купить в 1 клик</span>
+					<button class="form__header-button">
+						<img src="img/modal/close-X.png" alt="крестик">
+					</button>
+				</div>
+				<div class="form__body">
+					<input type="email" class="input form__buy-input-email" placeholder="Введите Ваш e-mail" required>
+					<input type="tel" class="input form__buy-input-tel" placeholder="Введите Ваш телефон" required>
+					<button class="button button__main  form__button">Отправить</button>
+				</div>
+			</form>
+	</div>
+
 
 <!-- == кнопка на вверх == -->
 	<div class="arrowup">

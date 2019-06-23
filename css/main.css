@@ -1884,9 +1884,6 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .footer__link_blog {
-    display: none;
-  }
   .footer__link_fix {
     margin-bottom: 6px;
   }
@@ -1924,7 +1921,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 2px;
   }
 }
-.modal__buy, .modal__cart-in, .modal__reg, .modal__question {
+.modal__buy, .modal__cart-in, .modal__reg, .modal__question, .modal__autor {
   position: fixed;
   left: 0;
   top: 0;
@@ -1942,14 +1939,14 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .modal_activ {
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .modal__cart {
   position: relative;
