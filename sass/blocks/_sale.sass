@@ -4,15 +4,41 @@
 		justify-content: space-between
 		align-items: flex-start
 		flex-wrap: wrap
+	// &__block-slide 
+	// 	display: flex
+	// 	justify-content: space-between
+	// 	align-items: flex-start
+	// 	flex-wrap: wrap
 	&__title 
 		margin-bottom: 23px
-		&__block 
-			display: flex 
-			justify-content: space-between 
-			flex-wrap: wrap 
 	&__label
 		top: 65px
 		left: 19px
+
+
+.sale__slide-wrap
+	display: none
+
+	
+@media (max-width: 1024px)
+	.sale__slide-wrap
+	.sale__block 
+		display: none 
+
+
+@media (max-width: 768px)
+	.sale 
+		padding-top: 24px
+		padding-bottom: 31px	
+		&__title 
+			color: $text-color
+			+op-semy
+			font-size: 22px
+			margin-bottom: 20px 
+			&:after 
+				content: ''
+				margin-top: 14px
+
 
 
 @media (max-width: 575px)

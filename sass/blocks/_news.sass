@@ -64,6 +64,62 @@
 			&:last-child
 				margin-right: 0
 
+@media (max-width: 768px) 
+	.news 
+		padding: 0
+		&__wrap 
+			padding-top: 36px
+			padding-bottom: 35px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+		&__title 
+			width: 332px
+			color: $text-color
+			font-size: 16px
+			+op-semy
+			line-height: 21px
+			text-transform: uppercase
+			margin-bottom: 15px
+			&:after 
+				content: ''
+				margin-top: 16px
+		&__subtitle 
+			width: 262px
+			color: $text-color
+			+op-reg
+			font-size: 14px
+			line-height: 18px
+			text-transform: uppercase
+			margin-bottom: 18px
+		&__form-input
+			width: 265px
+			color: #999999
+			+op-light
+			font-size: 13px
+			padding: 14px 118px 14px 29px
+			background-color: #fff
+		&__form 
+				display: flex
+				flex-direction: row
+				align-items: center
+				margin: 0 !important
+				padding-left: 85px
+				&-wrap 
+					display: flex 
+					width: 100%
+					flex-direction: row 
+					justify-content: flex-start
+					margin-bottom: 28px
+		&__button 	
+				color: #ffffff
+				+rb-reg
+				font-size: 13px
+				font-weight: 500
+				padding: 13px 28px 13px 28px
+
+
 
 @media (max-width: 575px) 
 	.news 

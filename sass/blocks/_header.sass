@@ -216,6 +216,55 @@
 
 
 	// == медия ==
+@media (max-width: 768px)
+	.header
+		&-wrap
+			padding: 21px 8px 21px 0
+		&-contacts 
+			display: none
+		&-logo 
+			width: 115px
+			height: 38px
+			&__wrap 
+				justify-content: flex-start
+		&-icons__item
+			margin-right: 15px
+			&:last-child:after
+				width: 18px
+				height: 18px
+				font-size: 9px
+				top: 4px 
+				left: 14px
+			&-img
+				width: 24px
+				height: 26px
+			&-text 
+				display: none
+			
+				
+
+	.nav 
+		display: flex 
+		align-items: center
+		padding: 6px 0 6px 0
+		min-height: 0
+		&__search 
+			&-icon 
+				top: 9px
+				right: 11px
+		&__select-groop > ul
+			display: none
+		&__input-search
+			width: 314px
+			color: #000
+			font-size: 12px
+			+op-light
+			padding: 10px 0 9px 17px
+			border-radius: 21px
+			border: none 
+			outline: none
+			
+
 @media (max-width: 575px)
 	.header
 		&-wrap

@@ -43,6 +43,56 @@
 	&__item4
 		margin-right: 40px
 
+.about__item-text_fix 
+	display: none
+
+
+@media (max-width: 768px) 
+	.about 
+		padding-top: 25px
+		padding-bottom: 10px
+		margin-bottom: 30px
+		&__block 
+			align-items: flex-start
+			justify-content: flex-start
+		&__item1
+			margin-right: 38px
+			margin-bottom: 18px
+			order: 1
+		&__item2
+			margin-right: 37px
+			margin-bottom: 20px
+			order: 3
+		&__item3
+			margin-right: 0
+			margin-bottom: 18px
+			order: 5
+		&__item4
+			margin-right: 0
+			margin-bottom: 22px
+			order: 2
+		&__item5
+			order: 4
+		&__item
+			&-icon1 
+				margin-right: 14px
+			&-icon2 
+				margin-right: 14px
+			&-icon3 
+				margin-right: 15px
+			&-icon4 
+				margin-right: 15px
+			&-icon5 
+				margin-right: 14px
+			&-text 
+				max-width: 220px	
+
+	.about__item-text_fix 
+		display: block 
+	.about__item-text_br 
+		display: none
+
+
 
 @media (max-width: 575px) 
 	.about 
@@ -74,3 +124,6 @@
 				margin-right: 14px
 			&-text 
 				max-width: 220px	
+
+	.about__item-text_fix 
+		display: none				

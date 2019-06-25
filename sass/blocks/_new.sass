@@ -13,6 +13,23 @@
 		margin-bottom: 20px
 
 
+.new__slide-wrap
+	display: none
+
+@media (max-width: 768px) 
+	.new 
+		padding-top: 36px
+		padding-bottom: 11px
+		&__title 
+			color: $text-color
+			+op-semy
+			font-size: 22px
+			margin-bottom: 20px 
+			&:after 
+				content: ''
+				margin-top: 14px
+
+
 @media (max-width: 575px) 
 	.new 
 		padding-top: 36px

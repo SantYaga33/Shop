@@ -43,7 +43,43 @@
 // == отключаем для остального диапазона ==
 .main__image-mobile
 	display: none
+.main__image-mobile750
+	display: none
+.main-item_high750
+	display: none
+@media (max-width: 768px)
+	.main 
+		padding-top: 22px 
+		&__image-adaptiv 
+			display: none 
+		&-blocks
+			display: flex
+			justify-content: space-between
+			align-items: center
+			&__left 
+				justify-content: space-between
+				flex-wrap: wrap
+		&-item
+			margin-right: 0
+			margin-bottom: 14px 
+			&__title 
+				padding: 21px 0 18px 0
+				color: $text-color
+				+op-semy
+				font-size: 16px
+			&_wide 
+				margin: 0
+				margin-bottom: 14px
 
+
+	.main-blocks__right
+		display: none
+	.main__image-mobile
+		display: block
+	.main__image-mobile750
+		display: block
+	.main-item_high750
+		display: block
 
 @media (max-width: 575px)
 	.main 
