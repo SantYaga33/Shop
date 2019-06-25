@@ -164,6 +164,79 @@
 	100% 
 		opacity: 1
 		bottom: -80px 
+
+
+@media (max-width: 768px)
+	.footer
+		padding-top: 4px
+		&__container
+			border-top: 1px solid #a7e3f7
+		&__title 
+			margin-top: 0
+			margin-bottom: 15px
+		&__title-fix 
+			display: block
+			width: 100%
+			padding-left: 80px
+		&__link 
+			&:last-child 
+				margin-bottom: 0
+		&__block
+			// align-items: center 
+			display: flex 
+			margin-bottom: 98px	
+			padding-top: 23px
+			position: relative
+			&-icons
+				display: flex
+				padding-left: 81px	
+			&-item  
+				margin: 0
+				flex-direction: column	
+				display: flex	
+				align-items: flex-start
+				&_fix 
+					flex-direction: row
+					flex-wrap: wrap	
+					position: absolute
+					bottom: -63px 
+					right: -161px
+			&-item1 
+				margin-right: 53px	
+			&-item2
+				margin-right: 46px	
+		&__link_fix 
+			margin-bottom: 19px				
+		&__link_big 
+			margin-bottom: 12px
+			&:last-child 
+				margin-bottom: 0
+		&__icon		
+			&:last-child
+				margin-right: 0
+		&__logo-delivery 
+			margin-bottom: 5px
+		&__copyright
+			width: 255px
+			padding-top: 23px
+			padding-left: 0
+			text-align: center
+			border-top: none
+			margin-left: 249px
+			&-text
+				width: 190px
+				height: 30px
+				opacity: 0.6
+				color: $text-color 
+				+op-light
+				font-size: 13px
+				line-height: 17px
+		&__copyright-img
+			width: 10px
+			height: 10px
+			margin-right: 0px	  
+			&-wrap 
+				padding-top: 4px
   
 
 @media (max-width: 575px)
