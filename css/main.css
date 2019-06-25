@@ -881,6 +881,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 20px;
   width: 18px;
   height: 18px;
+  cursor: pointer;
 }
 
 .nav__-sub {
@@ -1589,6 +1590,12 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-left: 0;
+  }
+  .news__form-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .news__button {
     color: #ffffff;
@@ -1891,18 +1898,35 @@ h1, h2, h3, h4, h5, h6 {
   .about__item1 {
     margin-right: 0;
     margin-bottom: 18px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .about__item2 {
     margin-right: 0;
     margin-bottom: 26px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .about__item3 {
     margin-right: 0;
     margin-bottom: 18px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   .about__item4 {
     margin-right: 0;
     margin-bottom: 25px;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .about__item5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
   .about__item-icon1 {
     margin-right: 14px;
@@ -1925,6 +1949,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .about__item-text_fix {
     display: none;
+  }
+
+  .about__item-text_br {
+    display: block;
   }
 }
 .footer {
@@ -2287,6 +2315,9 @@ h1, h2, h3, h4, h5, h6 {
   .footer {
     padding-top: 4px;
   }
+  .footer__title {
+    margin-top: 25px;
+  }
   .footer__title-fix {
     display: block;
     width: 100%;
@@ -2304,6 +2335,7 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 36px;
+    padding-top: 0;
   }
   .footer__block-icons {
     display: -webkit-box;
@@ -2331,6 +2363,7 @@ h1, h2, h3, h4, h5, h6 {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    position: static;
   }
   .footer__link_fix {
     margin-bottom: 6px;
@@ -2347,11 +2380,15 @@ h1, h2, h3, h4, h5, h6 {
   .footer__logo-delivery {
     margin-bottom: 5px;
   }
+  .footer__title-delivery {
+    margin-top: 19px;
+  }
   .footer__copyright {
     width: 255px;
     padding-top: 19px;
     padding-left: 62px;
     text-align: center;
+    margin-left: 0;
   }
   .footer__copyright-text {
     width: 190px;
