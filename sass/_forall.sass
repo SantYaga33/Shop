@@ -2,14 +2,16 @@
 	box-sizing: border-box 
 	margin: 0
 	padding: 0
+html 
+	background-color: #fff
 
 body
 	+op-reg 
 	color: $text-color
 	position: relative
 	
-// a 
-	cursyr: pointer
+a 
+	cursor: pointer
 	
 img 
 	max-width: 100%
@@ -28,12 +30,12 @@ h1, h2, h3, h4, h5, h6
 		max-width: 960px
 		width: 95%
 
-@media (max-width: 991px)
+@media (max-width: 1024px)
 		.container 
 			max-width: 720px
 			width: 95%
 
-@media (max-width: 767px)
+@media (max-width: 768px)
 		.container 
 			max-width: 596px
 			width: 95%
@@ -123,7 +125,10 @@ h1, h2, h3, h4, h5, h6
 			fill: $main-color
 			transition: all 0.3s ease 
 
-
+@media (max-width: 575px) 
+	.arrowup 
+		width: 45px
+		height: 45px
 
 .card 
 	width: 263px
@@ -176,6 +181,9 @@ h1, h2, h3, h4, h5, h6
 		&-icon 
 			width: 20px
 			height: 18px
+
+.card  a
+	cursor: pointer		
 			
 // == стили для всплывающих списков в карточке ==
 

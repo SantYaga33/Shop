@@ -12,7 +12,7 @@
 			width: 29px
 			height: 30px
 			content: ''
-			margin-right: 15px
+			margin-right: 14px
 			background: url('../img/header/icon-phone.svg')
 	&-phone
 		text-decoration: none
@@ -26,6 +26,9 @@
 		display: flex
 		justify-content: flex-end
 		flex-basis: 33%
+		padding-top: 6px
+		padding-right: 6px
+
 	&-icons 
 		display: flex	
 		&__item
@@ -33,7 +36,7 @@
 			flex-direction: column
 			justify-content: center
 			align-items: center
-			margin-right: 40px
+			margin-right: 35px
 			text-decoration: none
 			cursor: pointer
 			&:last-child 
@@ -48,7 +51,7 @@
 					justify-content: center 
 					align-items: center
 					top: -4px
-					left: 20px
+					left: 26px
 					width: 23px
 					height: 23px
 					border-radius: 50%
@@ -174,7 +177,7 @@
 		color: #000
 		font-size: 13px
 		+op-light
-		padding: 16px 247px 17px 22px
+		padding: 15px 247px 16px 22px
 		border-radius: 21px
 		border: none 
 		outline: none
@@ -182,7 +185,7 @@
 		position: relative
 	&__search-icon 
 		position: absolute
-		top: 16px
+		top: 13px
 		right: 20px 
 		width: 18px
 		height: 18px
@@ -217,6 +220,13 @@
 
 
 	// == медия ==
+@media (max-width: 1200px)
+	.button-header
+		display: none
+
+
+
+
 @media (max-width: 768px)
 	.header
 		&-wrap

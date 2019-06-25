@@ -196,14 +196,29 @@ buttonCloselEL.on('click', function() {
 
 // == переход на стр товар при клике на карточку ==
 
-$(document).ready(function(){
-     $(".card").click(function(){
-          window.location=$(this).find("a").attr("href"); 
-          return false;
-     });
+// $(document).ready(function(){
+//      $(".card").click(function(){
+//           window.location=$(this).find("a").attr("href"); 
+//           return false;
+//      });
+// });
+
+// == плавный переход между страницами сайта == 
+$(document).ready(function() {
+    $("body").css("display", "none");
+
+    $("body").fadeIn(2000);
+
+  $("a.transition").click(function(event){
+    event.preventDefault();
+    linkLocation = this.href;
+    $("body").fadeOut(1000, redirectPage);
+  });
+
+  function redirectPage() {
+    window.location = linkLocation;
+  }
 });
-
-
 
 
 

@@ -1,4 +1,4 @@
-	<header class="header">
+		<header class="header">
 		<div class="header-top">
 			<div class="container">
 				<div class="header-wrap">
@@ -7,20 +7,20 @@
 							<a class="header-phone" href="tel:9871880808">(987) 188 08 08</a>
 							<a class="header-phone" href="tel:9683550505">(968) 355 05 05</a>
 						</div>
-						<button class="button button-header">Перезвоните мне</button>
+						<button class="button button-header" id="header__btn">Перезвоните мне</button>
 					</div>
-						<div class="header-logo__wrap">
+						<a href="index.html"  class="header-logo__wrap">
 							<div class="header-logo">
 								<img src="img/header/header-logo.png" alt="логотип">
 							</div>
-						</div>
+						</a>
 						<div class="header-icons__wrap">
 							<div class="header-icons">
-								<a href="#" class="header-icons__item">
+								<a href="#" id="header__in" class="header-icons__item">
 									<div class="header-icons__item-img">
 										<img src="img/header/icon-dress.svg" alt="иконка">
 									</div>
-									<span class="header-icons__item-text">Вход</span>
+									<span class="header-icons__item-text" >Вход</span>
 								</a>
 								<a href="#" class="header-icons__item">
 									<div class="header-icons__item-img">
@@ -28,7 +28,7 @@
 									</div>
 									<span class="header-icons__item-text">Избранное</span>
 								</a>
-								<a href="#" class="header-icons__item">
+								<a href="#" class="header-icons__item" id="header__cart">
 									<div class="header-icons__item-img">
 										<img src="img/header/shopping-cart.svg" alt="иконка">
 									</div>
