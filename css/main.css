@@ -934,6 +934,19 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+@media (max-width: 1024px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav__select-groop > ul {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .header-wrap {
     padding: 21px 8px 21px 0;
