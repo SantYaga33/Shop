@@ -14,6 +14,7 @@ body {
   font-weight: 400;
   color: #393939;
   position: relative;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -771,13 +772,13 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 16px;
+  cursor: pointer;
 }
 .nav__burger {
   opacity: 1;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-
 .nav__burger, .nav__burger:before, .nav__burger:after {
   content: "";
   width: 20px;
@@ -787,15 +788,26 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-
 .nav__burger:before {
   -webkit-transform: translateY(-6px);
           transform: translateY(-6px);
 }
-
 .nav__burger:after {
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
+}
+.nav__burger-wrap:hover .nav__burger {
+  height: 0;
+}
+.nav__burger-wrap:hover .nav__burger:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #F80415;
+}
+.nav__burger-wrap:hover .nav__burger:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #F80415;
 }
 
 .nav__select {
@@ -1190,9 +1202,8 @@ h1, h2, h3, h4, h5, h6 {
             align-items: center;
   }
   .main-blocks__left {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1226,6 +1237,13 @@ h1, h2, h3, h4, h5, h6 {
 
   .main-item_high750 {
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .main-blocks__left {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (max-width: 575px) {
@@ -2612,7 +2630,7 @@ h1, h2, h3, h4, h5, h6 {
   .footer__title-fix {
     display: block;
     width: 100%;
-    padding-left: 80px;
+    padding-left: 0;
   }
   .footer__link:last-child {
     margin-bottom: 0;
@@ -2629,7 +2647,7 @@ h1, h2, h3, h4, h5, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 81px;
+    padding-left: 0;
   }
   .footer__block-item {
     margin: 0;
@@ -2653,7 +2671,8 @@ h1, h2, h3, h4, h5, h6 {
         flex-wrap: wrap;
     position: absolute;
     bottom: -63px;
-    right: -161px;
+    right: 17px;
+    width: 144px;
   }
   .footer__block-item1 {
     margin-right: 53px;
@@ -2809,6 +2828,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 12px;
     margin-right: 2px;
   }
+}
+.modal {
+  z-index: 2000;
 }
 .modal__buy, .modal__cart-in, .modal__reg, .modal__question, .modal__autor {
   position: fixed;
@@ -3701,6 +3723,61 @@ input[type="checkbox"]:checked + label:after {
   font-size: 14px;
 }
 
+@media (max-width: 1200px) {
+  .select__wrap {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .select__block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media (max-width: 768px) {
+  .select {
+    padding-top: 29px;
+  }
+  .select__groop-wrap {
+    display: none;
+  }
+  .select__title {
+    color: #393939;
+    font-family: "OpenSans-Semibold", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .select__select {
+    margin-bottom: 15px;
+  }
+  .select__select li {
+    width: 290px;
+    height: 46px;
+  }
+  .select__block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .select__card {
+    margin: 0;
+    margin-bottom: 22px;
+    -ms-flex-preferred-size: 263px;
+        flex-basis: 263px;
+    margin-bottom: 19px;
+  }
+  .select__card:last-child {
+    margin-bottom: 26px;
+  }
+  .select__wrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 13px;
+  }
+}
 @media (max-width: 575px) {
   .select {
     padding: 0;
@@ -3715,6 +3792,9 @@ input[type="checkbox"]:checked + label:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .select__title {
     width: 239px;

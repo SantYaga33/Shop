@@ -79,7 +79,7 @@
 			justify-content: space-between
 			align-items: center
 			&__left 
-				justify-content: space-between
+				justify-content: space-around
 				flex-wrap: wrap
 		&-item
 			margin-right: 0
@@ -102,6 +102,13 @@
 		display: block
 	.main-item_high750
 		display: block
+
+@media (max-width: 768px)
+	.main 
+		&-blocks
+			&__left 
+				justify-content: space-between
+
 
 @media (max-width: 575px)
 	.main 

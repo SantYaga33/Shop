@@ -93,22 +93,32 @@
 		justify-content: center
 		align-items: center
 		margin-right: 16px
+		cursor: pointer 
 	&__burger
 		opacity: 1
 		transition: all .2s ease
-.nav__burger, .nav__burger:before, .nav__burger:after 
-	content: ''
-	width: 20px
-	height: 1px
-	background-color: #fff
-	position: absolute
-	transition: all .2s ease
+	&__burger, &__burger:before, &__burger:after 
+		content: ''
+		width: 20px
+		height: 1px
+		background-color: #fff
+		position: absolute
+		transition: all .2s ease
+	&__burger:before 
+		transform: translateY(-6px)
+	&__burger:after 
+		transform: translateY(6px)
+	&__burger-wrap:hover .nav__burger 
+		height: 0
+	&__burger-wrap:hover .nav__burger:before 
+		transform: rotate(45deg)
+		background-color: #F80415
+	&__burger-wrap:hover .nav__burger:after 
+		transform: rotate(-45deg)
+		background-color: #F80415
 
-.nav__burger:before 
-	transform: translateY(-6px)
 
-.nav__burger:after 
-	transform: translateY(6px)
+
 
 
 // == стили для выпадающего списка ==
@@ -261,8 +271,6 @@
 				&-text 
 					display: none
 			
-				
-
 	.nav 
 		display: flex 
 		align-items: center
@@ -284,6 +292,31 @@
 			border: none 
 			outline: none
 			
+	// .nav 
+	// 	position: relative
+	// 	&__mat 
+	// 		position: absolute
+	// 		top: 68px
+	// 		left: 0
+	// 		width: 100%
+	// 		min-height: 0
+	// 		background-color: #28AEE0
+	// 		box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15)
+	// 		z-index: 50
+	// 		opacity: 0
+	// 	&__select-groop > ul
+	// 		display: flex
+	// 		flex-direction: column
+	// 		position: absolute
+	// 		top: 66px
+	// 		width: 596px
+	// 		background-color: red
+	// 		z-index: 1000
+	// 	&__select-groop > ul:hover .nav__mat 
+	// 		opacity: 1 
+	// 		min-height: 470px 
+
+
 
 @media (max-width: 575px)
 	.header

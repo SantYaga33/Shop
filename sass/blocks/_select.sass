@@ -135,7 +135,47 @@
 		font-size: 14px
 
 
+
+
+@media (max-width: 1200px)
+	.select
+		&__wrap 
+			justify-content: space-around 
+			flex-wrap: wrap
+		&__block 
+			justify-content: space-around 
+@media (max-width: 1024px)
+
+@media (max-width: 768px) 
+	.select
+		padding-top: 29px
+		&__groop-wrap 
+			display: none
+		&__title 
+			color: $text-color
+			+op-semy
+			font-size: 20px
+			margin-bottom: 16px
+		&__select 
+			margin-bottom: 15px
+		&__select li 
+			width: 290px
+			height: 46px
+		&__block 
+			justify-content: space-between
+		&__card 
+			margin: 0
+			margin-bottom: 22px
+			flex-basis: 263px
+			margin-bottom: 19px
+			&:last-child 
+				margin-bottom: 26px
+		&__wrap 
+			justify-content: space-between
+			margin-bottom: 13px
+
 @media (max-width: 575px) 
+
 	.select
 		padding: 0
 		padding-top: 20px
@@ -145,6 +185,7 @@
 				display: none
 		&__wrap 
 			flex-direction: column 
+			align-items: center
 		&__title 
 			width: 239px
 			color: $text-color
