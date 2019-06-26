@@ -52,14 +52,28 @@
 
 // == медиа == 
 @media (max-width: 1200px)
-	
+	.main 
+		&-block__left
+			justify-content: space-between
+		&-item_wide 
+			margin-right: 32px
+			margin-bottom: 20px
+		&__image-mob1200 
+			width: 300px 
+			margin-right: 16px
+		&-item_high 
+			width: 299px
 
 
-@media (max-width: 768px)
+
+
+@media (max-width: 1024px)
 	.main 
 		padding-top: 22px 
 		&__image-adaptiv 
 			display: none 
+		&-item_high750
+			width: 290px
 		&-blocks
 			display: flex
 			justify-content: space-between
