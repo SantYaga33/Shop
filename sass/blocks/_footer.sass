@@ -256,12 +256,16 @@
 @media (max-width: 575px)
 	.footer
 		padding-top: 4px
+		&__container
+			display: flex 
+			justify-content: center
 		&__title 
 			margin-top: 25px 
 		&__title-fix 
 			display: block
 			width: 100%
-			padding-left: 80px
+			padding-left: 0
+			text-align: center
 		&__link 
 			&:last-child 
 				margin-bottom: 0
@@ -272,7 +276,7 @@
 			padding-top: 0
 			&-icons
 				display: flex
-				padding-left: 81px	
+				padding-left: 0	
 			&-item  
 				margin: 0
 				flex-direction: column	
@@ -282,6 +286,7 @@
 					flex-direction: row
 					flex-wrap: wrap	
 					position: static
+					justify-content: center
 		&__link_fix 
 			margin-bottom: 6px				
 		&__link_big 
@@ -298,7 +303,7 @@
 		&__copyright
 			width: 255px
 			padding-top: 19px
-			padding-left: 62px
+			padding-left: 0
 			text-align: center
 			margin-left: 0
 			&-text

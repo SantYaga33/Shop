@@ -17,8 +17,10 @@
 		left: 19px
 
 
-.sale__slide-wrap
-	display: none
+
+.sale__slide-mobile
+	display: none 
+
 // == медиа == 
 @media (max-width: 1200px)
 	.card 
@@ -32,15 +34,14 @@
 	.card 
 		flex-basis: 36% 
 
-	.sale__slide-wrap
-	.sale__block 
-		display: none 
 
 
 @media (max-width: 768px)
 	.sale 
 		padding-top: 24px
-		padding-bottom: 31px	
+		padding-bottom: 31px
+		&__block 
+			display: none	
 		&__title 
 			color: $text-color
 			+op-semy
@@ -49,6 +50,43 @@
 			&:after 
 				content: ''
 				margin-top: 14px
+		&__slide-mobile
+			width: 596px
+			display: flex 
+			justify-content: center 
+			align-items: center 
+		&__slide-wrap 
+			display: flex 
+			justify-content: center 
+			width: 100%
+			position: relative
+		&__slide-arrowL 
+			position: absolute
+			top: 169px
+			left: -14px
+			display: flex
+			justify-content: center 
+			align-items: center 
+			width: 48px
+			height: 48px
+			background-color: $main-color
+			opacity: 0.6	
+			border-radius: 50%
+		&__slide-arrowR 
+			position: absolute
+			top: 168px
+			left: 562px
+			display: flex
+			justify-content: center 
+			align-items: center 
+			width: 48px
+			height: 48px
+			background-color: $main-color
+			opacity: 0.6
+			border-radius: 50%	
+	.card 
+		width: 263px
+		margin: 0 17px
 
 
 
@@ -105,3 +143,49 @@
 			border: 1px solid #e8e8e8
 		&__article
 			margin-bottom: 17px
+
+@media (max-width: 414px) 
+	.sale   
+		&__slide-arrowL 
+			top: 169px
+			left: -13px
+		&__slide-arrowR
+			top: 168px
+			left: 230px
+		
+@media (max-width: 411px)
+	.sale   
+		&__slide-arrowL 
+			top: 169px
+			left: -14px
+		&__slide-arrowR
+			top: 169px
+			left: 227px
+
+@media (max-width: 375px) 
+	.sale   
+		&__slide-arrowL 
+			top: 169px
+			left: -31px
+		&__slide-arrowR
+			top: 168px
+			left: 212px
+
+@media (max-width: 360px) 
+	.sale   
+		&__slide-arrowL 
+			top: 169px
+			left: -37px
+		&__slide-arrowR
+			top: 168px
+			left: 207px
+	
+@media (max-width: 320px) 
+	.sale   
+		&__slide-arrowL 
+			top: 169px
+			left: -50px
+		&__slide-arrowR
+			top: 168px
+			left: 193px
+		
