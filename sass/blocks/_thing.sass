@@ -4,6 +4,7 @@
 	&__wrap 
 		display: flex
 		margin-bottom: 18px
+		flex-wrap: wrap
 		&-slids 
 			max-width: 654px
 		&-slide-main 
@@ -368,3 +369,51 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6
 		+rb-bold
 		font-size: 18px
 		color: $text-color
+
+.slide__left-arrow768, .slide__right-arrow768
+	display: none
+
+@media (max-width: 1200px)
+	.thing 
+		&__wrap 
+			margin-bottom: 60px
+			justify-content: center
+		&__info-block 
+			padding-left: 0
+		&__like-block	
+			flex-wrap: wrap 
+			justify-content: space-around 
+		&__like-item 
+			margin-bottom: 26px
+
+
+@media (max-width: 1024px)
+	.article
+		&__groop 
+			&-wrap2
+				display: none
+	.thing__tab:before, .thing__tab:after
+		width: 720px
+
+@media (max-width: 768px) 
+	.thing__tab:before, .thing__tab:after
+		width: 596px
+	.slide__wrap 
+		display: none
+	.thing__wrap-slide-main
+		position: relative
+	.slide__left-arrow768
+		display: block
+		position: absolute
+		left: 20px 
+		bottom: 200px
+	.slide__right-arrow768
+		display: block
+		position: absolute
+		right: 20px 
+		bottom: 200px
+	.thing__article 
+		width: 596px
+	.thing__tab 
+		min-width: 596px
+@media (max-width: 575px) 

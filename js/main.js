@@ -17,9 +17,28 @@ $('.thing__slide-main').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   infinite: true,
-  arrows: false,
+  // arrows: false,
   asNavFor: '.thing__slide',
   fade: true,
+  prevArrow: $('.sale__slide-arrowL'),
+  nextArrow: $('.sale__slide-arrowR'),
+   responsive: [
+  {
+    breakpoint: 768,
+    settings: {
+      arrows: true,
+      infinite: true,
+    }
+  },
+  {
+    breakpoint: 575,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+  }
+  },
+]
 
 });
 
