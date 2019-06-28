@@ -9,8 +9,7 @@ arrowupEl.click(function() {
   return false;
  });
 
-
-
+console.log('werwr');
 // == двойной слайдер ==
 
 $('.thing__slide-main').slick({
