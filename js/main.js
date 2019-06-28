@@ -131,7 +131,7 @@ let buttonHeaderEL        = $('#header__btn'),
     modalAutorEL          = $('.modal__autor'),
     modalCartEL           = $('.modal__cart-in'),
     modalHeaderCloseEL    = $('.modal__header-button'),
-    buttonCloselEL        = $('.form__header-button')
+    buttonCloselEL        = $('.form__header-button'),
 
 
 buttonThingBuyEL.on('click', function() {
