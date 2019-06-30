@@ -458,4 +458,44 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6
 		width: 596px
 	.thing__tab 
 		min-width: 596px
+	.thing__like-title 
+		font-size: 20px		
+	.thing__like
+		&-block 
+			display: none   
+		&-slide
+			display: block 
+	.thing__like-title:after
+		margin-top: 12px
+	.thing__like-slide-wrap 
+		position: relative
+		width: 445px
+		margin: 0 auto
+	.thing__like-item
+		width: 208px
+	.like__slide-arrowL
+		position: absolute
+		display: flex
+		justify-content: center 
+		align-items: center 
+		width: 48px
+		height: 48px
+		background-color: $main-color
+		opacity: 0.6	
+		border-radius: 50%
+		left: -89px 
+		top: 130px
+	.like__slide-arrowR
+		position: absolute
+		display: flex
+		justify-content: center 
+		align-items: center 
+		width: 48px
+		height: 48px
+		background-color: $main-color
+		opacity: 0.6	
+		border-radius: 50%
+		left: 474px 
+		top: 130px		
+
 @media (max-width: 575px) 

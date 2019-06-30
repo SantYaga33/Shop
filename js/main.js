@@ -110,7 +110,30 @@ $('.new__slide-mobile').slick({
 
 });
 
+$('.thing__like-slide').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  prevArrow: $('.like__slide-arrowL'),
+  nextArrow: $('.like__slide-arrowR'),
+  responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+  ]
 
+});
 
 });
 
