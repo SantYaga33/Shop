@@ -315,10 +315,10 @@
 							</div>
 						</div>
 						<div class="sale__slide-arrows">
-						<div class="sale__slide-arrowL .slide__left-arrow768">
+						<div class="slide__left-arrow768">
 							<img src="img/sale/slide-left-arrow.png" alt="стрелка">
 						</div>
-						<div class="sale__slide-arrowR .slide__right-arrow768">
+						<div class="slide__right-arrow768">
 							<img src="img/sale/slide-right-arrow.png" alt="стрелка">
 						</div>
 					</div>
@@ -383,50 +383,56 @@
 							<img src="img/thing/silver-star.png" alt="звездочка" class="thing__item-icons">
 						</span>
 					</div>
-					<div class="span thing__item-sltitle">Выберите цвет:</div>
-						<ul class="thing__select">
-							<li>
-								<div class="thing__select-color thing__select-color_blue"></div>
-								<span class="thing__select-text">Синий</span>
-								<div class="thing__select-arrow">
-									<img src="img/thing/arrow-down.png" alt="стрелка">
-								</div>
-									<ul>
+					<div class="thing__select-wrap">
+						<div class="thing__select-wrap-color">
+							<div class="span thing__item-sltitle">Выберите цвет:</div>
+								<ul class="thing__select">
+									<li>
+										<div class="thing__select-color thing__select-color_blue"></div>
+										<span class="thing__select-text">Синий</span>
+										<div class="thing__select-arrow">
+											<img src="img/thing/arrow-down.png" alt="стрелка">
+										</div>
+											<ul>
+													<li><a href="#">
+														<div class="thing__select-color thing__select-color_red"></div>
+														<span class="thing__select-text">Красный</span></a>
+													</li>
+												<li><a href="#">
+													<div class="thing__select-color thing__select-color_green"></div>
+													<span class="thing__select-text">Зеленый</span></a>
+												</li>
+												<li><a href="#">
+													<div class="thing__select-color thing__select-color_black"></div>
+													<span class="thing__select-text">Черный</span></a>
+												</li>
+											</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="thing__select-wrap-size">
+						<span class="thing__item-sltitle">Выберите размер:</span>
+							<ul class="thing__select thing__select-size">
+								<li>
+									<span class="thing__select-subsize">XXL</span>
+									<div class="thing__select-arrow">
+										<img src="img/thing/arrow-down.png" alt="стрелка">
+									</div>
+										<ul>
+												<li><a href="#">
+													<span class="thing__select-subsize">XL</span></a>
+												</li>
 											<li><a href="#">
-												<div class="thing__select-color thing__select-color_red"></div>
-												<span class="thing__select-text">Красный</span></a>
+												<span class="thing__select-subsize">L</span></a>
 											</li>
-										<li><a href="#">
-											<div class="thing__select-color thing__select-color_green"></div>
-											<span class="thing__select-text">Зеленый</span></a>
-										</li>
-										<li><a href="#">
-											<div class="thing__select-color thing__select-color_black"></div>
-											<span class="thing__select-text">Черный</span></a>
-										</li>
-									</ul>
-							</li>
-						</ul>
-					<span class="thing__item-sltitle">Выберите размер:</span>
-						<ul class="thing__select thing__select-size">
-							<li>
-								<span class="thing__select-subsize">XXL</span>
-								<div class="thing__select-arrow">
-									<img src="img/thing/arrow-down.png" alt="стрелка">
-								</div>
-									 <ul>
 											<li><a href="#">
-												<span class="thing__select-subsize">XL</span></a>
+												<span class="thing__select-subsize">X</span></a>
 											</li>
-										<li><a href="#">
-											<span class="thing__select-subsize">L</span></a>
-										</li>
-										<li><a href="#">
-											<span class="thing__select-subsize">X</span></a>
-										</li>
-									</ul> 
-							</li>
-						</ul>
+										</ul> 
+								</li>
+							</ul>
+						</div>		
+					</div>
 					<span class="thing__item-oldprice">6766.00</span>
 					<span class="thing__item-newprice">5984.00</span>
 					<div class="thing__item-wrap">
@@ -494,18 +500,20 @@
 			</div>
 
 			<div class="thing__tab">
-				<input type="radio" class="thing__input" name="tab" id="tab-1" checked>
-				<label for="tab-1" class="thing__label thing__label1">Описание</label>
-				<input type="radio" class="thing__input" name="tab" id="tab-2">
-				<label for="tab-2" class="thing__label thing__label2">Характеристики</label>
-				<input type="radio" class="thing__input" name="tab" id="tab-3">
-				<label for="tab-3" class="thing__label thing__label3">Фото</label>
-				<input type="radio" class="thing__input" name="tab" id="tab-4">
-				<label for="tab-4" class="thing__label thing__label4">Оплата</label>
-				<input type="radio" class="thing__input" name="tab" id="tab-5">
-				<label for="tab-5" class="thing__label thing__label5">Доставка</label>
-				<input type="radio" class="thing__input" name="tab" id="tab-6">
-				<label for="tab-6" class="thing__label">Отзывы</label>
+				<div class="thing__tab-wrap-label">									
+					<input type="radio" class="thing__input" name="tab" id="tab-1" checked>
+					<label for="tab-1" class="thing__label thing__label1">Описание</label>
+					<input type="radio" class="thing__input" name="tab" id="tab-2">
+					<label for="tab-2" class="thing__label thing__label2">Характеристики</label>
+					<input type="radio" class="thing__input" name="tab" id="tab-3">
+					<label for="tab-3" class="thing__label thing__label3">Фото</label>
+					<input type="radio" class="thing__input" name="tab" id="tab-4">
+					<label for="tab-4" class="thing__label thing__label4">Оплата</label>
+					<input type="radio" class="thing__input" name="tab" id="tab-5">
+					<label for="tab-5" class="thing__label thing__label5">Доставка</label>
+					<input type="radio" class="thing__input" name="tab" id="tab-6">
+					<label for="tab-6" class="thing__label">Отзывы</label>
+				</div>
 				<div class="thing__content">
 					<article class="thing__article thing__tab-1">
 						<div class="thing__article-groop">

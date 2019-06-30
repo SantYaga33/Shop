@@ -4392,6 +4392,46 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
   }
 }
 @media (max-width: 768px) {
+  .thing {
+    padding-top: 28px;
+  }
+  .thing__select li {
+    width: 291px;
+  }
+  .thing__select-wrap-color {
+    margin-right: 14px;
+  }
+  .thing__item-title {
+    margin-bottom: 14px;
+  }
+  .thing__item-article {
+    margin-bottom: 17px;
+  }
+  .thing__item-stars {
+    margin-bottom: 20px;
+  }
+  .thing__select {
+    margin-bottom: 0;
+  }
+  .thing__select-wrap {
+    margin-bottom: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .thing__select-size {
+    margin-bottom: 0;
+  }
+  .thing__button {
+    margin-right: 21px;
+  }
+  .thing__social-groop {
+    display: none;
+  }
+  .thing__wrap {
+    margin-bottom: 15px;
+  }
+
   .thing__tab:before, .thing__tab:after {
     width: 596px;
   }
@@ -4402,20 +4442,49 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
 
   .thing__wrap-slide-main {
     position: relative;
+    width: 441px;
+    padding-bottom: 36px;
+    margin-bottom: 9px;
   }
 
   .slide__left-arrow768 {
-    display: block;
     position: absolute;
-    left: 20px;
-    bottom: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #00b5ee;
+    opacity: 0.6;
+    border-radius: 50%;
+    left: -93px;
+    top: 194px;
   }
 
   .slide__right-arrow768 {
-    display: block;
     position: absolute;
-    right: 20px;
-    bottom: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #00b5ee;
+    opacity: 0.6;
+    border-radius: 50%;
+    left: 470px;
+    top: 194px;
   }
 
   .thing__article {

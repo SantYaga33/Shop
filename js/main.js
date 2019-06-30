@@ -19,8 +19,8 @@ $('.thing__slide-main').slick({
   // arrows: false,
   asNavFor: '.thing__slide',
   fade: true,
-  prevArrow: $('.sale__slide-arrowL'),
-  nextArrow: $('.sale__slide-arrowR'),
+  prevArrow: $('.slide__left-arrow768'),
+  nextArrow: $('.slide__right-arrow768'),
    responsive: [
   {
     breakpoint: 768,
@@ -131,7 +131,7 @@ let buttonHeaderEL        = $('#header__btn'),
     modalAutorEL          = $('.modal__autor'),
     modalCartEL           = $('.modal__cart-in'),
     modalHeaderCloseEL    = $('.modal__header-button'),
-    buttonCloselEL        = $('.form__header-button'),
+    buttonCloselEL        = $('.form__header-button');
 
 
 buttonThingBuyEL.on('click', function() {

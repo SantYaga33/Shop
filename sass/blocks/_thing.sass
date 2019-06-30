@@ -395,23 +395,65 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6
 	.thing__tab:before, .thing__tab:after
 		width: 720px
 
-@media (max-width: 768px) 
+@media (max-width: 768px)
+	.thing 
+		padding-top: 28px
+		&__select li 
+			width: 291px
+		&__select-wrap-color 
+			margin-right: 14px
+		&__item-title 
+			margin-bottom: 14px
+		&__item-article 
+			margin-bottom: 17px 
+		&__item-stars 
+			margin-bottom: 20px	
+		&__select 
+			margin-bottom: 0
+			&-wrap 
+				margin-bottom: 18px
+				display: flex
+		&__select-size 
+			margin-bottom: 0
+		&__button 
+			margin-right: 21px
+		&__social-groop 
+			display: none
+		&__wrap 
+			margin-bottom: 15px			
 	.thing__tab:before, .thing__tab:after
 		width: 596px
 	.slide__wrap 
 		display: none
 	.thing__wrap-slide-main
 		position: relative
+		width: 441px
+		padding-bottom: 36px
+		margin-bottom: 9px
 	.slide__left-arrow768
-		display: block
 		position: absolute
-		left: 20px 
-		bottom: 200px
+		display: flex
+		justify-content: center 
+		align-items: center 
+		width: 48px
+		height: 48px
+		background-color: $main-color
+		opacity: 0.6	
+		border-radius: 50%
+		left: -93px 
+		top: 194px
 	.slide__right-arrow768
-		display: block
 		position: absolute
-		right: 20px 
-		bottom: 200px
+		display: flex
+		justify-content: center 
+		align-items: center 
+		width: 48px
+		height: 48px
+		background-color: $main-color
+		opacity: 0.6	
+		border-radius: 50%
+		left: 470px 
+		top: 194px
 	.thing__article 
 		width: 596px
 	.thing__tab 
