@@ -4394,6 +4394,7 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
 @media (max-width: 768px) {
   .thing {
     padding-top: 28px;
+    padding-bottom: 39px;
   }
   .thing__select li {
     width: 291px;
@@ -4493,6 +4494,7 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
 
   .thing__tab {
     min-width: 596px;
+    margin-bottom: -21px;
   }
 
   .thing__like-title {
@@ -4512,12 +4514,14 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
 
   .thing__like-slide-wrap {
     position: relative;
-    width: 445px;
+    width: 475px;
     margin: 0 auto;
   }
 
   .thing__like-item {
     width: 208px;
+    margin-right: 0;
+    margin: 0 15px;
   }
 
   .like__slide-arrowL {
@@ -4536,7 +4540,7 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
     background-color: #00b5ee;
     opacity: 0.6;
     border-radius: 50%;
-    left: -89px;
+    left: -75px;
     top: 130px;
   }
 
@@ -4556,7 +4560,7 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
     background-color: #00b5ee;
     opacity: 0.6;
     border-radius: 50%;
-    left: 474px;
+    left: 489px;
     top: 130px;
   }
 }
