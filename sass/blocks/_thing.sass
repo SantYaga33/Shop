@@ -373,6 +373,9 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6
 .slide__left-arrow768, .slide__right-arrow768
 	display: none
 
+.thing__like-slide-wrap 
+	display: none
+
 @media (max-width: 1200px)
 	.thing 
 		&__wrap 
@@ -470,6 +473,7 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6
 	.thing__like-title:after
 		margin-top: 12px
 	.thing__like-slide-wrap 
+		display: block
 		position: relative
 		width: 475px
 		margin: 0 auto
@@ -503,3 +507,11 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6
 		top: 130px		
 
 @media (max-width: 575px) 
+	.thing__wrap-slide-main
+		width: 291px
+	.thing__select-wrap
+		flex-direction: column
+	.thing__tab
+		display: none	
+	.thing__like-slide-wrap 
+		width: 208px	

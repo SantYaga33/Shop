@@ -4362,6 +4362,10 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
   display: none;
 }
 
+.thing__like-slide-wrap {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .thing__wrap {
     margin-bottom: 60px;
@@ -4513,6 +4517,7 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
   }
 
   .thing__like-slide-wrap {
+    display: block;
     position: relative;
     width: 475px;
     margin: 0 auto;
@@ -4562,5 +4567,25 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6 {
     border-radius: 50%;
     left: 489px;
     top: 130px;
+  }
+}
+@media (max-width: 575px) {
+  .thing__wrap-slide-main {
+    width: 291px;
+  }
+
+  .thing__select-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .thing__tab {
+    display: none;
+  }
+
+  .thing__like-slide-wrap {
+    width: 208px;
   }
 }
