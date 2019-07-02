@@ -136,7 +136,24 @@ $('.thing__like-slide').slick({
 });
 
 });
+ 
+// == слайд для табов ==
+  $('.thing__tab-slide-label').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows : false,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        }
+      },
+    ]
 
+  });
 
 // == мод окно  ==
 let buttonHeaderEL        = $('#header__btn'),

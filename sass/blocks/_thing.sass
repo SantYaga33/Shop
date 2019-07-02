@@ -375,6 +375,26 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6
 
 .thing__like-slide-wrap 
 	display: none
+// == временно заменяем выделение таба ==
+.thing__label	
+		position: relative
+		margin-right: 40px
+		margin-left: 0
+		margin: 0 auto
+		&:active
+			color: $main-color
+			+op-bold 
+			&:after
+				content: ''
+				display: inline-block
+				position: absolute
+				left: 0
+				bottom: 0px
+				width: 100%
+				height: 3px
+				background-color: $main-color 
+
+
 
 @media (max-width: 1200px)
 	.thing 
@@ -461,8 +481,31 @@ input[id="tab-6"]:checked ~ .thing__content .thing__tab-6
 	.thing__article 
 		width: 596px
 	.thing__tab 
-		min-width: 596px
+		max-width: 596px
 		margin-bottom: -21px
+	.thing__tab-slide-label
+		width: 760px
+		display: flex	
+	.thin__tab-wrap-label
+		display: flex
+		justify-content: center		
+	.thing__label	
+		position: relative
+		margin-right: 40px
+		margin-left: 0
+		margin: 0 auto
+		&:active
+			color: $main-color
+			+op-bold 
+			&:after
+				content: ''
+				display: inline-block
+				position: absolute
+				left: 0
+				bottom: 0px
+				width: 100%
+				height: 3px
+				background-color: $main-color 
 	.thing__like-title 
 		font-size: 20px		
 	.thing__like
